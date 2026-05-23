@@ -3,16 +3,191 @@
 
 | | |
 |---|---|
-| Tổng tickets | 38 |
-| Tổng việc cần sửa | ~180 |
-| Khoảng ngày comment | 2026-05-08 ～ 2026-05-14 |
-| Điều kiện lọc | assignee = VTI アイン · status = 30_差戻／修正依頼 |
+| Tổng tickets | 45 |
+| Tổng việc cần sửa | ~196 |
+| Khoảng ngày comment | 2026-05-07 ～ 2026-05-15 |
+| Điều kiện lọc | assignee = VTI アイン · status = 30_差戻／修正依頼 · assigneeId=2045991 |
 
 **Cách dùng:** Sửa xong từng dòng → điền `OK` / `NOK` / `N/A` vào Round 1 → khi tất cả OK → upload → đổi status Backlog `20_確認待ち`.
 
 ---
 
+# 親課題: [POS_UI-5] 売上返品・売上内容変更
+
+---
+
+## [POS_UI-69] C000048_時間帯選択
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-07 ～ 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Visual Style | Thống nhất design màn hình với POS_UI-21 (cùng màn hình nhưng là menu khác nhau, quản lý ticket riêng biệt) | c-732475490 | | | | | |
+| 2 | Cấu trúc Layout & Vị trí Thông tin | Căn chỉnh design theo màn hình配送情報変更_時間帯選択 | c-734825937 | | | | | Tham khảo ảnh đính kèm trên Backlog |
+
+---
+
+## [POS_UI-72] C000052_別紙案内
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-07 ～ 2026-05-13 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Tab & Thông tin Chi tiết / Consistency | Áp dụng sửa đổi theo POS_UI-41#comment-721883817 (xem comment gốc trên Backlog) | c-732482364 | | | | | Nội dung chưa fetch |
+| 2 | UI Components & Controls | Chỉ hiển thị button削除・鉛筆マーク・並び替え khi touch/focus vào dòng tương ứng | c-734791438 | | | | | Tham chiếu POS_UI-41#comment-712625423 |
+| 3 | Cấu trúc Layout & Vị trí Thông tin | Tách thành 2 vùng: vùng nhập liệu + vùng hiển thị danh sách別紙 đã nhập | c-736183390 | | | | | Tham chiếu POS_UI-162#comment-736182674 |
+| 4 | UI Components & Controls | Chỉ hiển thị button削除・鉛筆・↑↓ khi touch vào dòng trong vùng hiển thị | c-736183390 | | | | | |
+| 5 | Screen Flow & Luồng Xử lý | Khi touch button鉛筆 → nội dung dòng đó hiện lên vùng nhập liệu để chỉnh sửa | c-736183390 | | | | | |
+| 6 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng khác nhau, tính đến độ dài ký tự tối đa | c-736183390 | | | | | |
+| 7 | Hiển thị & Đồng bộ Thông tin | Cột No hỗ trợ tối đa 99 dòng | c-736183390 | | | | | |
+
+---
+
+## [POS_UI-73] C000053_お客様情報
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-07 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Tab & Thông tin Chi tiết / Consistency | Áp dụng sửa đổi theo POS_UI-40#comment-721884429 (xem comment gốc trên Backlog) | c-732482954 | | | | | Nội dung chưa fetch |
+
+---
+
+## [POS_UI-82] A0426_新黒伝決済（お預かり金額入力）
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-07 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Visual Style | Thống nhất design với POS_UI-18 (hiện tại khác biệt với các menu khác) | c-732491120 | | | | | Xem POS_UI-18 để tham khảo thiết kế đúng |
+
+---
+
+## [POS_UI-194] 返品エラー通知
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「通知」(không cần thiết) | c-735365601 | | | | | |
+| 2 | UI Components & Controls | Thu nhỏ button「終了」về cùng kích thước với các button khác | c-735365601 | | | | | |
+
+---
+
+## [POS_UI-195] 元伝と新黒決済確認
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Cập nhật thiết kế mới nhất: thêm hiển thị「お買上げ総数」và「総額」(vùng khung đỏ trong ảnh) | c-735380732 | | | | | |
+| 2 | Hiển thị & Đồng bộ Thông tin | Thêm hiển thị「未決済金額」vào thiết kế (vùng khung xanh trong ảnh) | c-735380732 | | | | | |
+
+---
+
+## [POS_UI-196] C000058_決済種別変更の確認
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「決済種別変更」ở trên cùng | c-735321651 | | | | | |
+
+---
+
+## [POS_UI-197] 元伝カード決済引き継ぎの確認
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「元伝カード決済」ở trên cùng | c-735320137 | | | | | |
+
+---
+
+## [POS_UI-198] 元伝決済時カード持ち確認
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「元伝決済時カード」ở trên cùng | c-735312896 | | | | | |
+| 2 | Screen Flow & Luồng Xử lý | Xác nhận luồng sau khi chọn「元伝決済時カード」: tự động chuyển màn hay cần button「確定」? Bổ sung thiết kế tương ứng | c-735312896 | | | | | Hiện tại không có button xác nhận |
+
+---
+
+## [POS_UI-201] C000047_客先配送予定日
+- 親課題: [POS_UI-5] 売上返品・売上内容変更
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | UI Components & Controls | Đồng bộ thiết kế theo màn hình配送情報変更_時間帯選択 (tham chiếu ảnh đính kèm) | c-734947119 | | | | | |
+
+---
+
+# 親課題: [POS_UI-132] 見積書
+
+---
+
+## [POS_UI-139] C000095_明細入力
+- 親課題: [POS_UI-132] 見積書
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-07 ～ 2026-05-15 (SMJ 河野 / SMJ 伊藤)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | UI Components & Controls | Xóa chức năng sort khỏi bảng明細 (bảng không thể sort) | c-732520561 | | | | | Tham khảo layout màn hình売上明細 |
+| 2 | UI Components & Controls | Thêm nút「・・・」để chọn phương thức tìm kiếm khác (型番検索 v.v.) | c-732520561 | | | | | Xem chi tiết POS_UI-65#comment-732467700 |
+| 3 | Cấu trúc Layout & Vị trí Thông tin | Đổi layout bảng明細 từ dạng テーブル sang dạng カード | c-734560706 | | | | | Thống nhất design với các màn hình tương tự |
+| 4 | Cấu trúc Layout & Vị trí Thông tin | Thiết kế lại toàn bộ màn hình dựa trên layout màn hình売上 | c-737425839 | | | | | Màn hình見積書 cũng tham khảo một phần |
+| 5 | UI Components & Controls | Thêm nút「定型文」「備考」ở góc phải dưới màn hình (theo vị trí màn hình売上) | c-737425839 | | | | | |
+| 6 | Screen Flow & Luồng Xử lý | Khi nhấn nút「定型文」hoặc「備考」, hiển thị popup cho phép nhập備考 và chọn定型文 | c-737425839 | | | | | Tham khảo ảnh đính kèm trên Backlog |
+| 7 | Hiển thị & Đồng bộ Thông tin | Hiển thị nội dung「定型文」「備考」đã nhập trong màn hình明細 | c-737425839 | | | | | |
+| 8 | Hiển thị & Đồng bộ Thông tin | Xóa mục「商品状態」(chỉ có trong màn hình見積書, không cần ở đây) | c-737425839 | | | | | |
+
+---
+
+# 親課題: [POS_UI-133] 請求書・納品書印刷
+
+---
+
+## [POS_UI-140] C000101_請求書一覧／納品書一覧表示
+- 親課題: [POS_UI-133] 請求書・納品書印刷
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-07 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Thêm màn hình明細 của請求書印刷 vào Figma画面遷移図 | c-732543328 | | | | | |
+| 2 | UI Components & Controls | Thiết kế lại với giả định商品明細 không thể thêm/sửa/xóa (read-only) trong màn請求書・納品書印刷 | c-732543328 | | | | | |
+
+---
+
 ## [POS_UI-148] C000103_請求書日付
+- 親課題: [POS_UI-133] 請求書・納品書印刷
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 (SMJ 河野)
@@ -30,6 +205,7 @@
 ---
 
 ## [POS_UI-149] C000104_お支払予定日
+- 親課題: [POS_UI-133] 請求書・納品書印刷
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 (SMJ 河野)
@@ -48,6 +224,7 @@
 ---
 
 ## [POS_UI-150] C000105_お客様氏名
+- 親課題: [POS_UI-133] 請求書・納品書印刷
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 (SMJ 河野)
@@ -59,6 +236,7 @@
 ---
 
 ## [POS_UI-151] C000106_摘要入力
+- 親課題: [POS_UI-133] 請求書・納品書印刷
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 (SMJ 河野)
@@ -69,7 +247,12 @@
 
 ---
 
+# 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
+
+---
+
 ## [POS_UI-155] C000110_検索方法選択
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-12 (SMJ 河野)
@@ -89,6 +272,7 @@
 ---
 
 ## [POS_UI-157] C000111_未承認一覧表示
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-13 (SMJ 河野)
@@ -107,6 +291,7 @@
 ---
 
 ## [POS_UI-158] C000114_詳細
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 (SMJ 河野)
@@ -124,6 +309,7 @@
 ---
 
 ## [POS_UI-160] C000115_別紙内容確認
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-13 (SMJ 河野)
@@ -137,6 +323,7 @@
 ---
 
 ## [POS_UI-161] C000116_次回訪問予定
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-13 (SMJ 河野)
@@ -150,6 +337,7 @@
 ---
 
 ## [POS_UI-162] C000117_見積内容
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-13 (SMJ 河野)
@@ -168,6 +356,7 @@
 ---
 
 ## [POS_UI-163] C000118_見積結果
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-13 (SMJ 河野)
@@ -182,6 +371,7 @@
 ---
 
 ## [POS_UI-165] C000120_店舗への連絡
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-13 (SMJ 河野)
@@ -196,6 +386,7 @@
 ---
 
 ## [POS_UI-166] C000121_コメント
+- 親課題: [POS_UI-134] 見積書未承認一覧(配送端末)
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 ～ 2026-05-13 (SMJ 河野)
@@ -209,7 +400,176 @@
 
 ---
 
+# 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+
+---
+
+## [POS_UI-180] C000123_検索方法選択
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734964609 | | | | | |
+| 2 | Cấu trúc Layout & Vị trí Thông tin | Đổi nền trắng để hiển thị màn hình lựa chọn (không hiện trên nền màn担当者) | c-734964609 | | | | | |
+| 3 | Hiển thị & Đồng bộ Thông tin | Xóa guide「～を選択してください」; sửa text vùng nền xanh thành「検索方法選択」 | c-734964609 | | | | | |
+| 4 | Hiển thị & Đồng bộ Thông tin | Đổi text「指定なし」thành「指定せずに検索」 | c-734964609 | | | | | |
+| 5 | UI Components & Controls | Điều chỉnh kích thước button「閉じる」nhỏ hơn (tránh nhầm 3 lựa chọn) | c-734964609 | | | | | |
+
+---
+
+## [POS_UI-181] C000125_端末見積書検索サブフォーム
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734954088 | | | | | |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng cùng sửa đổi với POS_UI-156#comment-732589585 (xem comment gốc trên Backlog) | c-734954088 | | | | | Cần xem comment POS_UI-156 để biết chi tiết |
+
+---
+
+## [POS_UI-182] C000124_未承認一覧表示
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734953344 | | | | | |
+| 2 | UI Components & Controls | Đổi header cột「選択」thành text「選択」(không dùng checkbox control) | c-734953344 | | | | | |
+| 3 | UI Components & Controls | Thêm function button (ngoài端末見積検索) hoặc phương án khác để thực hiện chức năng | c-734953344 | | | | | |
+| 4 | UI Components & Controls | Đổi button xanh thành「印刷」 | c-734953344 | | | | | |
+| 5 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh scrollbar không che lên cột金額 | c-734953344 | | | | | |
+| 6 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng No khác nhau + thêm tooltip | c-734953344 | | | | | Áp dụng cho các màn tương tự |
+| 7 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh khoảng trắng trên/dưới để hiển thị gần 18 dòng | c-734953344 | | | | | |
+
+---
+
+## [POS_UI-183] C000127_詳細
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734936232 | | | | | |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Tab明細: đổi sang thiết kế giống màn売上 (tham chiếu配送情報変更) | c-734936232 | | | | | Không cần tính năng edit明細 |
+| 3 | Input Fields & Form Design | Tab摘要欄: áp dụng cùng sửa đổi với POS_UI-151 (1 dòng 45 ký tự × 5 dòng MAX) | c-734936232 | | | | | |
+| 4 | Tab & Thông tin Chi tiết / Consistency | Tab顧客情報: thêm thông tin hiển thị tham chiếu màn顧客 trong売上返品・売上内容変更 | c-734936232 | | | | | |
+| 5 | Hiển thị & Đồng bộ Thông tin | Thêm thiết kế thông báo「あんしんパスポート会員ではない」khi khách hàng không phải hội viên | c-734945894 | | | | | |
+
+---
+
+## [POS_UI-184] C000126_印刷確認
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi text「お客様控えのみ」thành「お客様控えのみを印刷」 | c-734983226 | | | | | Thêm「を印刷」|
+| 2 | Hiển thị & Đồng bộ Thông tin | Đổi text「会員番号記載」thành「見積書に会員番号を記載」 | c-734983226 | | | | | Thêm「見積書に～を記載」|
+
+---
+
+## [POS_UI-185] C000128_別紙内容確認
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734927112 | | | | | |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Đổi thiết kế hiển thị tab từ「次回訪問予定」đến「コメント」(giống C000114_詳細) | c-734927112 | | | | | Tham chiếu POS_UI-160#734882594 |
+| 3 | Screen Flow & Luồng Xử lý | Khi mở màn hình, focus vào tab「次回訪問予定」 | c-734927112 | | | | | |
+
+---
+
+## [POS_UI-186] C000129_次回訪問予定
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734927913 | | | | | |
+| 2 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734927913 | | | | | Tham chiếu POS_UI-161#734888361 |
+| 3 | Cấu trúc Layout & Vị trí Thông tin | Căn phải số枠数 | c-734927913 | | | | | |
+
+---
+
+## [POS_UI-187] C000130_見積内容
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734927342 | | | | | |
+| 2 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734927342 | | | | | Tham chiếu POS_UI-162#734913270 |
+
+---
+
+## [POS_UI-188] C000131_見積結果
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734926686 | | | | | |
+| 2 | Screen Flow & Luồng Xử lý | Khi di chuyển mục sang「選択済み」, vẫn giữ mục ở danh sách bên trái | c-734926686 | | | | | Tham chiếu POS_UI-163#734915564 |
+| 3 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734926686 | | | | | |
+| 4 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng khác nhau, tính đến độ dài ký tự tối đa | c-734926686 | | | | | |
+
+---
+
+## [POS_UI-190] C000133_店舗への連絡
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734926004 | | | | | |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng cùng sửa đổi với POS_UI-164#comment-734921550 (xem comment gốc trên Backlog) | c-734926004 | | | | | Cần xem comment POS_UI-164 để biết chi tiết |
+
+---
+
+## [POS_UI-191] C000134_コメント
+- 親課題: [POS_UI-135] 見積書未印刷一覧(配送端末)
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-12 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734926251 | | | | | |
+| 2 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh khoảng trắng trên/dưới để hiển thị được 12 dòng mà không cần scroll | c-734926251 | | | | | Tham chiếu POS_UI-166#734924654 |
+| 3 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734926251 | | | | | |
+| 4 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng khác nhau, tính đến độ dài ký tự tối đa | c-734926251 | | | | | |
+
+---
+
+# 親課題: [POS_UI-136] DC在庫予約
+
+---
+
 ## [POS_UI-167] C000185_明細入力
+- 親課題: [POS_UI-136] DC在庫予約
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 (SMJ 河野)
@@ -233,6 +593,7 @@
 ---
 
 ## [POS_UI-169] C000186_在庫引当確認 / 予約取消確認
+- 親課題: [POS_UI-136] DC在庫予約
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-12 (SMJ 河野)
@@ -246,7 +607,12 @@
 
 ---
 
+# 親課題: [POS_UI-137] 配送工事空き状況
+
+---
+
 ## [POS_UI-171] C000176_空き状況一覧表示
+- 親課題: [POS_UI-137] 配送工事空き状況
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-14 (SMJ 河野)
@@ -266,6 +632,7 @@
 ---
 
 ## [POS_UI-173] C000178_配送工事区分選択
+- 親課題: [POS_UI-137] 配送工事空き状況
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-13 (SMJ 河野)
@@ -282,6 +649,7 @@
 ---
 
 ## [POS_UI-174] C000180_指定方法選択
+- 親課題: [POS_UI-137] 配送工事空き状況
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-13 (SMJ 河野)
@@ -295,6 +663,7 @@
 ---
 
 ## [POS_UI-175] B0401_エリア絞込
+- 親課題: [POS_UI-137] 配送工事空き状況
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-13 (SMJ 河野)
@@ -310,7 +679,28 @@
 
 ---
 
+## [POS_UI-176] C000181_JISコード入力
+- 親課題: [POS_UI-137] 配送工事空き状況
+- Người phụ trách: VTI アイン
+- Status: 30_差戻／修正依頼
+- Ngày comment: 2026-05-13 (SMJ 河野)
+
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
+|---|------|-------------|------|---------|---------|---------|---|--------|
+| 1 | Input Fields & Form Design | Tạo thiết kế ô JISコード ở trạng thái đã nhập (không chỉ trạng thái chưa nhập); làm rõ hiển thị sau search (JISコード hay 都道府県+市) | c-736226319 | | | | | |
+| 2 | Cấu trúc Layout & Vị trí Thông tin | Căn giữa cột JISコード và 配送頻度 | c-736226319 | | | | | |
+| 3 | Hiển thị & Đồng bộ Thông tin | Sửa typo「頻度」(「頻」bị viết sai) | c-736226319 | | | | | |
+| 4 | Hiển thị & Đồng bộ Thông tin | Sửa dữ liệu mẫu địa chỉ từ「ミトミツクニ」sang dạng「都道府県 + 市」 | c-736226319 | | | | | |
+| 5 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng明細 khác nhau | c-736226319 | | | | | |
+| 6 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh scrollbar không che lên明細 | c-736226319 | | | | | |
+| 7 | UI Components & Controls | Xóa button「確定」(nếu đây là màn「配送工事エリア担当店舗照会」, cần xác nhận với SMJ 河野) | c-736226319 | | | | | |
+| 8 | UI Components & Controls | Đổi màu button「印刷」sang màu xanh | c-736226319 | | | | | |
+| 9 | Screen Flow & Luồng Xử lý | Tạo thiết kế màn hình sau khi bấm button「宅配不可エリア」 | c-736226319 | | | | | |
+
+---
+
 ## [POS_UI-178] C000182_店舗情報入力
+- 親課題: [POS_UI-137] 配送工事空き状況
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-13 (SMJ 河野)
@@ -329,225 +719,8 @@
 
 ---
 
-## [POS_UI-180] C000123_検索方法選択
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734964609 | | | | | |
-| 2 | Cấu trúc Layout & Vị trí Thông tin | Đổi nền trắng để hiển thị màn hình lựa chọn (không hiện trên nền màn担当者) | c-734964609 | | | | | |
-| 3 | Hiển thị & Đồng bộ Thông tin | Xóa guide「～を選択してください」; sửa text vùng nền xanh thành「検索方法選択」 | c-734964609 | | | | | |
-| 4 | Hiển thị & Đồng bộ Thông tin | Đổi text「指定なし」thành「指定せずに検索」 | c-734964609 | | | | | |
-| 5 | UI Components & Controls | Điều chỉnh kích thước button「閉じる」nhỏ hơn (tránh nhầm 3 lựa chọn) | c-734964609 | | | | | |
-
----
-
-## [POS_UI-181] C000125_端末見積書検索サブフォーム
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734954088 | | | | | |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng cùng sửa đổi với POS_UI-156#comment-732589585 (xem comment gốc trên Backlog) | c-734954088 | | | | | Cần xem comment POS_UI-156 để biết chi tiết |
-
----
-
-## [POS_UI-182] C000124_未承認一覧表示
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734953344 | | | | | |
-| 2 | UI Components & Controls | Đổi header cột「選択」thành text「選択」(không dùng checkbox control) | c-734953344 | | | | | |
-| 3 | UI Components & Controls | Thêm function button (ngoài端末見積検索) hoặc phương án khác để thực hiện chức năng | c-734953344 | | | | | |
-| 4 | UI Components & Controls | Đổi button xanh thành「印刷」 | c-734953344 | | | | | |
-| 5 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh scrollbar không che lên cột金額 | c-734953344 | | | | | |
-| 6 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng No khác nhau + thêm tooltip | c-734953344 | | | | | Áp dụng cho các màn tương tự |
-| 7 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh khoảng trắng trên/dưới để hiển thị gần 18 dòng | c-734953344 | | | | | |
-
----
-
-## [POS_UI-183] C000127_詳細
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734936232 | | | | | |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Tab明細: đổi sang thiết kế giống màn売上 (tham chiếu配送情報変更) | c-734936232 | | | | | Không cần tính năng edit明細 |
-| 3 | Input Fields & Form Design | Tab摘要欄: áp dụng cùng sửa đổi với POS_UI-151 (1 dòng 45 ký tự × 5 dòng MAX) | c-734936232 | | | | | |
-| 4 | Tab & Thông tin Chi tiết / Consistency | Tab顧客情報: thêm thông tin hiển thị tham chiếu màn顧客 trong売上返品・売上内容変更 | c-734936232 | | | | | |
-| 5 | Hiển thị & Đồng bộ Thông tin | Thêm thiết kế thông báo「あんしんパスポート会員ではない」khi khách hàng không phải hội viên | c-734945894 | | | | | |
-
----
-
-## [POS_UI-184] C000126_印刷確認
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Đổi text「お客様控えのみ」thành「お客様控えのみを印刷」 | c-734983226 | | | | | Thêm「を印刷」|
-| 2 | Hiển thị & Đồng bộ Thông tin | Đổi text「会員番号記載」thành「見積書に会員番号を記載」 | c-734983226 | | | | | Thêm「見積書に～を記載」|
-
----
-
-## [POS_UI-185] C000128_別紙内容確認
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734927112 | | | | | |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Đổi thiết kế hiển thị tab từ「次回訪問予定」đến「コメント」(giống C000114_詳細) | c-734927112 | | | | | Tham chiếu POS_UI-160#734882594 |
-| 3 | Screen Flow & Luồng Xử lý | Khi mở màn hình, focus vào tab「次回訪問予定」 | c-734927112 | | | | | |
-
----
-
-## [POS_UI-186] C000129_次回訪問予定
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734927913 | | | | | |
-| 2 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734927913 | | | | | Tham chiếu POS_UI-161#734888361 |
-| 3 | Cấu trúc Layout & Vị trí Thông tin | Căn phải số枠数 | c-734927913 | | | | | |
-
----
-
-## [POS_UI-187] C000130_見積内容
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734927342 | | | | | |
-| 2 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734927342 | | | | | Tham chiếu POS_UI-162#734913270 |
-
----
-
-## [POS_UI-188] C000131_見積結果
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734926686 | | | | | |
-| 2 | Screen Flow & Luồng Xử lý | Khi di chuyển mục sang「選択済み」, vẫn giữ mục ở danh sách bên trái | c-734926686 | | | | | Tham chiếu POS_UI-163#734915564 |
-| 3 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734926686 | | | | | |
-| 4 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng khác nhau, tính đến độ dài ký tự tối đa | c-734926686 | | | | | |
-
----
-
-## [POS_UI-190] C000133_店舗への連絡
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734926004 | | | | | |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng cùng sửa đổi với POS_UI-164#comment-734921550 (xem comment gốc trên Backlog) | c-734926004 | | | | | Cần xem comment POS_UI-164 để biết chi tiết |
-
----
-
-## [POS_UI-191] C000134_コメント
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Sửa tiêu đề màn hình thành「見積書未印刷一覧（配送端末）」 | c-734926251 | | | | | |
-| 2 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh khoảng trắng trên/dưới để hiển thị được 12 dòng mà không cần scroll | c-734926251 | | | | | Tham chiếu POS_UI-166#734924654 |
-| 3 | Visual Style | Đồng bộ thiết kế trường見積数量・金額 theo các màn hình khác | c-734926251 | | | | | |
-| 4 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng khác nhau, tính đến độ dài ký tự tối đa | c-734926251 | | | | | |
-
----
-
-## [POS_UI-194] 返品エラー通知
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「通知」(không cần thiết) | c-735365601 | | | | | |
-| 2 | UI Components & Controls | Thu nhỏ button「終了」về cùng kích thước với các button khác | c-735365601 | | | | | |
-
----
-
-## [POS_UI-195] 元伝と新黒決済確認
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Cập nhật thiết kế mới nhất: thêm hiển thị「お買上げ総数」và「総額」(vùng khung đỏ trong ảnh) | c-735380732 | | | | | |
-| 2 | Hiển thị & Đồng bộ Thông tin | Thêm hiển thị「未決済金額」vào thiết kế (vùng khung xanh trong ảnh) | c-735380732 | | | | | |
-
----
-
-## [POS_UI-196] C000058_決済種別変更の確認
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「決済種別変更」ở trên cùng | c-735321651 | | | | | |
-
----
-
-## [POS_UI-197] 元伝カード決済引き継ぎの確認
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「元伝カード決済」ở trên cùng | c-735320137 | | | | | |
-
----
-
-## [POS_UI-198] 元伝決済時カード持ち確認
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「元伝決済時カード」ở trên cùng | c-735312896 | | | | | |
-| 2 | Screen Flow & Luồng Xử lý | Xác nhận luồng sau khi chọn「元伝決済時カード」: tự động chuyển màn hay cần thêm button「確定」? Bổ sung thiết kế tương ứng | c-735312896 | | | | | Hiện tại không có button xác nhận |
-
----
-
-## [POS_UI-201] C000047_客先配送予定日
-- Người phụ trách: VTI アイン
-- Status: 30_差戻／修正依頼
-- Ngày comment: 2026-05-12 (SMJ 河野)
-
-| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
-|---|------|-------------|------|---------|---------|---------|---|--------|
-| 1 | UI Components & Controls | Đồng bộ thiết kế theo màn配送情報変更_時間帯選択 (tham chiếu ảnh đính kèm) | c-734947119 | | | | | |
-
----
-
 ## [POS_UI-203] C000183_空き状況一覧表示
+- 親課題: [POS_UI-137] 配送工事空き状況
 - Người phụ trách: VTI アイン
 - Status: 30_差戻／修正依頼
 - Ngày comment: 2026-05-08 (SMJ 河野)
