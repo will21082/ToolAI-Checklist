@@ -1,838 +1,98 @@
-# Checklist 差戻／修正依頼 — VTI アイン
+# SHARP POS UI — Checklist 差戻／修正依頼
 
 | Mục | Giá trị |
 |---|---|
 | Project | POS_UI — siconnect.backlog.com |
 | Assignee | VTI アイン |
-| Status | 30_差戻／修正依頼 |
-| Tổng tickets | 45 |
+| Status lọc | 30_差戻／修正依頼 |
+| Tổng tickets nguồn | 45 |
 | Ngày tổng hợp | 2026-05-24 |
+| Người tổng hợp | VTI アイン |
 
 ---
 
-## Tổng quan theo nhóm
+## Tổng kết Round
 
-| Nhóm | Số tickets |
-|---|---|
-| 💳 決済フロー系 (Luồng thanh toán) | 5 |
-| 📦 配送・予約系 (Giao hàng / Đặt lịch) | 8 |
-| 🧾 請求・決済系 (Hóa đơn / Thanh toán) | 11 |
-| 📋 見積・承認系 (Báo giá / Phê duyệt) — Nhóm C000123-134 | 11 |
-| 📋 見積・承認系 (Báo giá / Phê duyệt) — Nhóm C000110-121 | 9 |
-| 🗺 エリア・検索系 (Khu vực / Tìm kiếm) | 1 |
-
----
-
-## Tiến độ xử lý
-
-| Key | Màn hình | Nội dung sửa | Hoàn thành | Ghi chú |
+| Round | OK | NOK | N/A | Kết quả |
 |---|---|---|---|---|
-| POS_UI-139 | C000095_明細入力 |  | ☐ |  |
-| POS_UI-140 | C000101_請求書一覧／納品書一覧表示 | @VTI アイン  ・Figmaの画面遷移図には請求書印刷の明細画面もありますので、こちらに添付をお願いします。 ・請求書、納品書印刷画面では商品明細の追加、削除、修正は行えません。 　商品明細が編集できない前提のデザインにしていただけますでしょうか。 | ☐ |  |
-| POS_UI-148 | C000103_請求書日付 | @VTI アイン  以下修正をお願いします。 ・販売担当者ではなく、印刷担当者に修正 ・「元伝の決済」ラベルは不要 ・請求書発行時は日付が必ず決まっているので、「予定日未定」チェックボックスは削除 ・【請求書　印刷サンプル】の枠線で囲まれた～ の文は１行に収める ・【法求出 印刷サンプル】→【請求書 | ☐ |  |
-| POS_UI-149 | C000104_お支払予定日 | @VTI アイン  以下修正をお願いします。 ・販売担当者ではなく、印刷担当者に修正 ・「お支払予定日」ラベル1つのみ表示 ・請求書発行時は日付が必ず決まっているので、「予定日未定」チェックボックスは削除 ・【請求書　印刷サンプル】の枠線で囲まれた～ の文は１行に収める ・【法求出 印刷サンプル】→ | ☐ |  |
-| POS_UI-150 | C000105_お客様氏名 | @VTI アイン  販売担当者ではなく、印刷担当者に修正をお願いします。 | ☐ |  |
-| POS_UI-151 | C000106_摘要入力 | @VTI アイン  摘要入力は1行全角４５文字×５行となります。 ”MAX文字数入れたデザインの作成をお願いします。 もし余白が余る場合は、調整をお願いします。 | ☐ |  |
-| POS_UI-155 | C000110_検索方法選択 | @VTI アイン  五月雨式で申し訳ありませんが、以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-157 | C000111_未承認一覧表示 | @VTI アイン  申し訳ございません。 以下コメントの 「・以下画像赤枠の機能ボタン（端末見積検索は除く）は引き継ぎたいので、ボタンを追加 または 別の手段で機能が実行できるようなデザインに修正」 については、ボタン配置場所の検討を進めますので一旦保留でお願いいたします。 | ☐ |  |
-| POS_UI-158 | C000114_詳細 | @VTI アイン  現行ではあんしんパスポート会員ではない顧客の見積書の場合は、その旨を表示しています。 この仕様は引き継ぎたいため、デザインの追加をお願いします。 [画像] | ☐ |  |
-| POS_UI-160 | C000115_別紙内容確認 | @VTI アイン   申し訳ございません。上記コメントについてです。 添付画像の画面「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加するデザインにしていただきますようお願いします。 [画像] | ☐ |  |
-| POS_UI-161 | C000116_次回訪問予定 | @VTI アイン  以下コメントの対応をお願いします。  「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。 | ☐ |  |
-| POS_UI-162 | C000117_見積内容 | @VTI アイン  以下コメントの対応をお願いします。  「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。 | ☐ |  |
-| POS_UI-163 | C000118_見積結果 | @VTI アイン  以下コメントの対応をお願いします。  「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。 | ☐ |  |
-| POS_UI-165 | C000120_店舗への連絡 | @VTI アイン  以下コメントの対応をお願いします。  「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。 | ☐ |  |
-| POS_UI-166 | C000121_コメント | @VTI アイン  以下コメントの対応をお願いします。  「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。 | ☐ |  |
-| POS_UI-167 | C000185_明細入力 | @VTI アイン  以下修正をお願いします。 [画像] ・型番の文字数が少ないと思います。 　表形式ではなく、売上と同じカード形式としていただきますようお願いします。 ・このメニューは1取引3明細までとなりますので3明細分は表示できるよう調整をお願いします。 ・”...”を表示する箇所はツールチップ | ☐ |  |
-| POS_UI-169 | C000186_在庫引当確認 / 予約取消確認 | @VTI アイン  以下修正をお願いします。 ・本来伝えなければならない”DC在庫引当を行いますか。”のフォントサイズが小さく目立たない印象ですので、フォントサイズを上げて下さい。 　また、タイトルと本文で同じ内容かと思いますのでタイトルを削除し、本文は「DC在庫の引当を行いますか。」としてください | ☐ |  |
-| POS_UI-171 | C000176_空き状況一覧表示 | @VTI アイン  以下ご対応のほどよろしくお願いいたします。 ・「センター店」表示エリアの"９１１２:試験配送センター"ですが、左側の表示エリアに"011-9112"（法人-店舗コード）が表示されているため、 　店舗名のみの表示でお願いします。 　また、店舗名は最大全角16文字ですので、そちらを考 | ☐ |  |
-| POS_UI-173 | C000178_配送工事区分選択 | @VTI アイン  ・時間帯の各ボタンデザインについては、配送情報変更_時間帯選択にデザインを合わせてください。 [画像]  ・工事重み（数値）を入力する際キーボードが表示されると思いますので、キーボードを表示させたデザインの作成もお願いします。  ・時間帯の件数が０件の場合は0/10の表記で、ボタ | ☐ |  |
-| POS_UI-174 | C000180_指定方法選択 | @VTI アイン  "指定方法"という単語が２回出てくるため、過剰に思います。※一部検索方法になっている ですので、タイトル：指定方法を選択は残して置き、「～を選択してください」のガイドは削除してください。 緑背景の検索方法も削除でお願いします。 また、閉じるボタンと検索方法のボタンの幅が同じため、 | ☐ |  |
-| POS_UI-175 | B0401エリア絞込 | @VTI アイン  ・エリアコードは中央揃えで表示してください。 ・エリア名称は最大で全角３０文字なので、その文字数がゆとりある形で入る程度の列幅で問題ありません。 　そのうえで、サブフォームのサイズ調整をお願いします。 ・同じデータが表示されることは想定していないため、表示データは各Noバラバラに | ☐ |  |
-| POS_UI-176 | C000181_JISコード入力 | ・JISコード入力のテキストボックスには検索後、何が表示されますでしょうか？ 　→JISコードのみでしょうか？それとも、都道府県＋市まで表示されますでしょうか？ 　→未入力状態だけでなく、入力済みの状態のデザインの作成をお願いします。  ・JISコード、配送頻度は中央揃えにしてください。  ・"頻度 | ☐ |  |
-| POS_UI-178 | C000182_店舗情報入力 | @VTI アイン  ・法人検索、店舗検索のテキストボックスには検索後、何が表示されますでしょうか？ 　→法人、店舗コードのみでしょうか？それとも、法人コードと法人名、店舗コードと店舗名でしょうか？ 　→未入力状態だけでなく、入力済みの状態のデザインの作成をお願いします。  ・JISコード、配送頻度は | ☐ |  |
-| POS_UI-180 | C000123_検索方法選択 | @VTI アイン  以下検討をお願いします。 ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・担当者画面に表示ではなく、白背景に選択画面を表示するデザインにできますでしょうか。 簡単なイメージになります。 [画像] ・"検索方法"という単語が３回出てくるため、過剰に思います。 　です | ☐ |  |
-| POS_UI-181 | C000125_端末見積書検索サブフォーム | @VTI アイン  ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-182 | C000124_未承認一覧表示 | @VTI アイン  以下修正をお願いします。 ・本チケットのタイトルを「C000124_未印刷一覧表示」に修正をお願いします。 ・タイトルは「見積書未印刷一覧（配送端末）」に修正 ・選択列のヘッダーはチェックボックスコントロールを置かずに、文言"選択"にする ・以下画像赤枠の機能ボタンは引き継ぎたい | ☐ |  |
-| POS_UI-183 | C000127_詳細 | @VTI アイン  現行ではあんしんパスポート会員ではない顧客の見積書の場合は、その旨を表示しています。 この仕様は引き継ぎたいため、デザインの追加をお願いします。 [画像] | ☐ |  |
-| POS_UI-184 | C000126_印刷確認 | @VTI アイン  ・「お客様控えのみ」「会員番号記載」のみでは直感的に分かりにくいため、 「お客様控えのみを印刷」「見積書に会員番号を記載」に文言変更をお願いします。  ・「C000124_未印刷一覧表示」で印刷をする場合、現行では以下のデザイン、流れになります。 [画像] ↓ [画像] | ☐ |  |
-| POS_UI-185 | C000128_別紙内容確認 | @VTI アイン  ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-186 | C000129_次回訪問予定 | @VTI アイン  ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-187 | C000130_見積内容 | @VTI アイン  ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-188 | C000131_見積結果 | @VTI アイン  ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-190 | C000133_店舗への連絡 | @VTI アイン  ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-191 | C000134_コメント | @VTI アイン  ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。 ・以下コメントの対応をお願いします。 | ☐ |  |
-| POS_UI-194 | 返品エラー通知 |  | ☐ |  |
-| POS_UI-195 | 元伝と新黒決済確認 | @VTI アイン  [画像] ・お買上げ総数、総額については、最新のデザインに反映をお願いします。（画像赤枠） ・未決済金額について、デザインに反映をお願いします。（画像青枠） [画像] | ☐ |  |
-| POS_UI-196 | C000058_決済種別変更の確認 |  | ☐ |  |
-| POS_UI-197 | 元伝カード決済引き継ぎの確認 | @VTI アイン  上に表示している「元伝カード決済」のタイトルは削除でお願いします。 | ☐ |  |
-| POS_UI-198 | 元伝決済時カード持ち確認 | @VTI アイン  ・上に表示している「元伝決済時カード」のタイトルは削除でお願いします。 ・「元伝決済時カード」を選択後は、自動で画面遷移する想定でしょうか。 　確定ボタンのようなものがないため確認です。 | ☐ |  |
-| POS_UI-201 | C000047_客先配送予定日 | @VTI アイン  配送情報変更_時間帯選択にデザインを合わせてください。 [画像] | ☐ |  |
-| POS_UI-203 | C000183_空き状況一覧表示 | @VTI アイン   と重複しているようです。（センター店名の表示がありません） 不要なチケットである可能性がありますので、ご確認をお願いします。 | ☐ |  |
-| POS_UI-69 | C000048_時間帯選択 | @VTI アイン  配送情報変更_時間帯選択にデザインを合わせてください。 [画像] | ☐ | ⚠️ 2026-03-31 |
-| POS_UI-72 | C000052_別紙案内 |  | ☐ | ⚠️ 2026-03-31 |
-| POS_UI-73 | C000053_お客様情報 | 以下コメントの対応をお願いします。 | ☐ | ⚠️ 2026-03-31 |
-| POS_UI-82 | A0426_新黒伝決済（お預かり金額入力） | 他のメニューとデザインが異なりますので統一をお願いします。 | ☐ | ⚠️ 2026-03-31 |
+| Round 1 | | | | Pass / Review Again / Acceptable |
+| Round 2 | | | | Pass / Review Again / Acceptable |
+| Round 3 | | | | Pass / Review Again / Acceptable |
 
 ---
 
-## Checklist Chi tiết theo Nhóm
-
-### 💳 決済フロー系 (Luồng thanh toán)  (5 tickets)
-
-#### 1. [POS_UI-194] 返品エラー通知
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> *(Chưa có comment)*
-
-#### 2. [POS_UI-195] 元伝と新黒決済確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> *(có đính kèm ảnh)*
-> ・お買上げ総数、総額については、最新のデザインに反映をお願いします。（画像赤枠）
-> ・未決済金額について、デザインに反映をお願いします。（画像青枠）
-> *(có đính kèm ảnh)*
-
-#### 3. [POS_UI-197] 元伝カード決済引き継ぎの確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 上に表示している「元伝カード決済」のタイトルは削除でお願いします。
-
-#### 4. [POS_UI-198] 元伝決済時カード持ち確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・上に表示している「元伝決済時カード」のタイトルは削除でお願いします。
-> ・「元伝決済時カード」を選択後は、自動で画面遷移する想定でしょうか。
-> 　確定ボタンのようなものがないため確認です。
-
-#### 5. [POS_UI-82] A0426_新黒伝決済（お預かり金額入力） · ⚠️ Due: **2026-03-31**
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> 他のメニューとデザインが異なりますので統一をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-18)
-
-### 📦 配送・予約系 (Giao hàng / Đặt lịch)  (8 tickets)
-
-#### 6. [POS_UI-167] C000185_明細入力
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下修正をお願いします。
-> *(có đính kèm ảnh)*
-> ・型番の文字数が少ないと思います。
-> 　表形式ではなく、売上と同じカード形式としていただきますようお願いします。
-> ・このメニューは1取引3明細までとなりますので3明細分は表示できるよう調整をお願いします。
-> ・”...”を表示する箇所はツールチップを表示する認識です。ツールチップの表示を含めたデザインの作成をお願いします。
-> ・型番での検索も可能ですので、型番検索ボタン または 他の手段をデザインに反映をお願いします。
-> ・「取消」を「在庫予約を取消」に修正をお願いします。
-> 　また、「取消」は戻る系のボタンになりますので、左側に配置をお願いします。
-> ・予約を試みたが、在庫がない場合はNo１のような表示になりますので、こちらのデザイン作成をお願いします。
-> 　作成後は、本チケットに添付をお願いします。
-> *(có đính kèm ảnh)*
-> 
-> 
-> *(có đính kèm ảnh)*
-> ・在庫予約番号はレシートのバーコードをスキャンすることも想定されるため、カメラボタンの追加をお願いします。
-> ・手入力時はキーボードを表示することになるかと思います。
-> 　手入力時のイメージをいただきたいため、キーボードが表示された場合のデザイン作成をお願いします。
-> ・ボタンサイズが大きすぎるため、入力UIではなく選択UIのように見えてしまいます。
-> 　テキストボックス、ボタンのサイズバランスについて、調整をお願いします。
-> ・タイトルとラベルで「在庫予約番号」という文言が重複しているため、タイトルを削除 または ラベルを削除 どちらかを対応いただきたいです。
-> 
-> 
-> *(có đính kèm ảnh)*
-> ・DC在庫予約と同じで明細のデザインはカード式でお願いします。
-> 　ただ、明細の登録がないため、配送情報変更のようなデザインになるかと思います。
-> *(có đính kèm ảnh)*
-> ・「進む」→「取消」に修正をお願いします。
-> ・取消の場合は数量も表示しますので、デザインに反映をお願いします。（以下画像赤枠を参考）
-> *(có đính kèm ảnh)*
-
-#### 7. [POS_UI-169] C000186_在庫引当確認 / 予約取消確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下修正をお願いします。
-> ・本来伝えなければならない”DC在庫引当を行いますか。”のフォントサイズが小さく目立たない印象ですので、フォントサイズを上げて下さい。
-> 　また、タイトルと本文で同じ内容かと思いますのでタイトルを削除し、本文は「DC在庫の引当を行いますか。」としてください
-> ・選択肢は「いいえ」「はい」としてください。
-
-#### 8. [POS_UI-171] C000176_空き状況一覧表示
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下ご対応のほどよろしくお願いいたします。
-> ・「センター店」表示エリアの"９１１２:試験配送センター"ですが、左側の表示エリアに"011-9112"（法人-店舗コード）が表示されているため、
-> 　店舗名のみの表示でお願いします。
-> 　また、店舗名は最大全角16文字ですので、そちらを考慮した表示幅にしてください。
-> 　表示するデータも最大文字数としてください。
-> 
-> ・前週 今週 翌週 の切替ですが、現在は以下の仕様となっております
-> 　→現在表示している情報が今週の場合は「前週」の切替不可
-> 　→1年以上先の情報も確認できるよう、「翌週」は1週間先のみではない（例：当営業日は2026/5/14の場合、2027/6/14 先も確認可能）
-> 　ですので、これを踏まえたデザインの作成をお願いします。
-> 
-> ・"エリア" が "アリア" になっているので、"エリア"に修正をお願いします。
-> 
-> ・枠数は最大3桁(999)ですので、表示データは3桁表示でお願いします。
-> 
-> ・予約処理ボタンがありません。
-> 　また、本機能はエリアと日付を選択し、「予約処理」ボタンを押すと予約画面に映ります。
-> 　このデザインですと、エリアと日付が押せるのかが分かりにくいと考えられます。
-> 　デザインの修正、または 別の予約手段があればご提示をお願いします。
-> 
-> ・Web受注ボタンを押した場合は、Web受注番号の入力に移るようにしていただきたいです。
-> 
-> ・Web受注ボタンの表示有無は店舗によって変わりますので、表示がないバージョンのデザイン策k姓をお願いします。
-> 　※店舗がWeb通販店であれば表示、でなければ非表示
-> 
-> ・取消ボタンは戻る系ですので、左側（戻るボタンの右側）に配置をお願いします。
-
-#### 9. [POS_UI-173] C000178_配送工事区分選択
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・時間帯の各ボタンデザインについては、配送情報変更_時間帯選択にデザインを合わせてください。
-> *(có đính kèm ảnh)*
-> 
-> ・工事重み（数値）を入力する際キーボードが表示されると思いますので、キーボードを表示させたデザインの作成もお願いします。
-> 
-> ・時間帯の件数が０件の場合は0/10の表記で、ボタンの状態は非活性となり押せない挙動になります。
-> 　こちらのデザインについても作成をお願いします。
-> 　また、他メニューでも同じ画面がありましたら合わせて対応をお願いします。
-> 
-> ・ガイドメッセージが予約担当者入力時の内容ですので、画面に合わせた内容に修正をお願いします。
-> 
-> ・エリアは店舗コード、店舗名ではなく、配送や工事エリア（水戸やいわき など）になりますので、デザインに反映をお願いします。
-> 
-> ・本機能は「配送工事費予約」と統合されており、当該機能には予約画面でエリアの説明コメントを表示しております。
-> 　なので、コメントの表示エリアをデザインに反映をお願いします。
-> 　表示コメントは全角５０文字×２行になります。
-> *(có đính kèm ảnh)*
-
-#### 10. [POS_UI-174] C000180_指定方法選択
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> "指定方法"という単語が２回出てくるため、過剰に思います。※一部検索方法になっている
-> ですので、タイトル：指定方法を選択は残して置き、「～を選択してください」のガイドは削除してください。
-> 緑背景の検索方法も削除でお願いします。
-> また、閉じるボタンと検索方法のボタンの幅が同じため、ぱっと見で３択に見えます。
-> 閉じるボタンのサイズは他画面に合わせてください。
-
-#### 11. [POS_UI-176] C000181_JISコード入力
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> ・JISコード入力のテキストボックスには検索後、何が表示されますでしょうか？
-> 　→JISコードのみでしょうか？それとも、都道府県＋市まで表示されますでしょうか？
-> 　→未入力状態だけでなく、入力済みの状態のデザインの作成をお願いします。
-> 
-> ・JISコード、配送頻度は中央揃えにしてください。
-> 
-> ・"頻度"の"頻"の漢字が間違っています。
-> 
-> ・住所は"ミトミツクニ"ではなく、都道府県＋市の表示にしてください。
-> 
-> ・データは各明細で別の内容にしてください。
-> 
-> ・スクロールバーは明細に被らないよう調整をお願いします。
-> 
-> ・この画面は現行の「配送工事エリア担当店舗照会」のデザインだと思われますが、認識合っておりますか？
-> 　合っている場合、「確定ボタン」は不要でお願いします。
-> 　また、「印刷ボタン」を青いボタンにしてください。
-> 
-> ・「宅配不可エリア」ボタンを押した後の画面デザイン作成をお願いします。
-
-#### 12. [POS_UI-178] C000182_店舗情報入力
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・法人検索、店舗検索のテキストボックスには検索後、何が表示されますでしょうか？
-> 　→法人、店舗コードのみでしょうか？それとも、法人コードと法人名、店舗コードと店舗名でしょうか？
-> 　→未入力状態だけでなく、入力済みの状態のデザインの作成をお願いします。
-> 
-> ・JISコード、配送頻度は中央揃えにしてください。
-> 
-> ・"頻度"の"頻"の漢字が間違っています。
-> 
-> ・住所は"ミトミツクニ"ではなく、都道府県＋市の表示にしてください。
-> 
-> ・データは各明細で別の内容にしてください。
-> 
-> ・スクロールバーは明細に被らないよう調整をお願いします。
-> 
-> ・この画面は現行の「配送工事エリア担当店舗照会」のデザインだと思われますが、認識合っておりますか？
-> 　合っている場合、「確定ボタン」は不要でお願いします。
-> 　また、「印刷ボタン」を青いボタンにしてください。
-> 
-> ・「宅配不可エリア」ボタンを押した後の画面デザイン作成をお願いします。
-
-#### 13. [POS_UI-203] C000183_空き状況一覧表示
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> [link](https://siconnect.backlog.com/view/POS_UI-171) と重複しているようです。（センター店名の表示がありません）
-> 不要なチケットである可能性がありますので、ご確認をお願いします。
-
-### 🧾 請求・決済系 (Hóa đơn / Thanh toán)  (11 tickets)
-
-#### 14. [POS_UI-139] C000095_明細入力
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> *(Chưa có comment)*
-
-#### 15. [POS_UI-140] C000101_請求書一覧／納品書一覧表示
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・Figmaの画面遷移図には請求書印刷の明細画面もありますので、こちらに添付をお願いします。
-> ・請求書、納品書印刷画面では商品明細の追加、削除、修正は行えません。
-> 　商品明細が編集できない前提のデザインにしていただけますでしょうか。
-
-#### 16. [POS_UI-148] C000103_請求書日付
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下修正をお願いします。
-> ・販売担当者ではなく、印刷担当者に修正
-> ・「元伝の決済」ラベルは不要
-> ・請求書発行時は日付が必ず決まっているので、「予定日未定」チェックボックスは削除
-> ・【請求書　印刷サンプル】の枠線で囲まれた～ の文は１行に収める
-> ・【法求出 印刷サンプル】→【請求書　印刷サンプル】に修正
-> ・文言の位置は以下画像に合わせる
-> *(có đính kèm ảnh)*
-> ・フッターの進捗バーは不要
-> ※既成のデザインを流用いただくのは問題ありませんが、現行画面を見比べていただきますようお願いいたします。
-
-#### 17. [POS_UI-149] C000104_お支払予定日
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下修正をお願いします。
-> ・販売担当者ではなく、印刷担当者に修正
-> ・「お支払予定日」ラベル1つのみ表示
-> ・請求書発行時は日付が必ず決まっているので、「予定日未定」チェックボックスは削除
-> ・【請求書　印刷サンプル】の枠線で囲まれた～ の文は１行に収める
-> ・【法求出 印刷サンプル】→【請求書　印刷サンプル】に修正
-> ・赤枠の位置が違います。添付画像青枠の位置にする
-> *(có đính kèm ảnh)*
-> ・文言の位置は以下画像に合わせる
-> *(có đính kèm ảnh)*
-> ・フッターの進捗バーは不要
-> ※既成のデザインを流用いただくのは問題ありませんが、現行画面を見比べていただきますようお願いいたします。
-
-#### 18. [POS_UI-150] C000105_お客様氏名
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 販売担当者ではなく、印刷担当者に修正をお願いします。
-
-#### 19. [POS_UI-151] C000106_摘要入力
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 摘要入力は1行全角４５文字×５行となります。
-> ”MAX文字数入れたデザインの作成をお願いします。
-> もし余白が余る場合は、調整をお願いします。
-
-#### 20. [POS_UI-196] C000058_決済種別変更の確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> *(Chưa có comment)*
-
-#### 21. [POS_UI-201] C000047_客先配送予定日
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 配送情報変更_時間帯選択にデザインを合わせてください。
-> *(có đính kèm ảnh)*
-
-#### 22. [POS_UI-69] C000048_時間帯選択 · ⚠️ Due: **2026-03-31**
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 配送情報変更_時間帯選択にデザインを合わせてください。
-> *(có đính kèm ảnh)*
-
-#### 23. [POS_UI-72] C000052_別紙案内 · ⚠️ Due: **2026-03-31**
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> *(Chưa có comment)*
-
-#### 24. [POS_UI-73] C000053_お客様情報 · ⚠️ Due: **2026-03-31**
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> 以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-40#comment-721884429)
-
-### 📋 見積・承認系 (Báo giá / Phê duyệt) — Nhóm C000123-134  (11 tickets)
-
-#### 25. [POS_UI-180] C000123_検索方法選択
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下検討をお願いします。
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・担当者画面に表示ではなく、白背景に選択画面を表示するデザインにできますでしょうか。
-> 簡単なイメージになります。
-> *(có đính kèm ảnh)*
-> ・"検索方法"という単語が３回出てくるため、過剰に思います。
-> 　ですので、タイトル：検索方法選択、「～を選択してください」のガイドを削除。
-> 　緑背景＋囲み線は残して置き、緑背景の部分は”検索方法選択”という文言に修正をお願いします。
-> 　また、「指定なし」を「指定せずに検索 」としてください。
-> ・閉じるボタンと検索方法のボタンの幅が同じため、ぱっと見で３択に見えます。
-> 　閉じるボタンのサイズは他画面に合わせてください。
-
-#### 26. [POS_UI-181] C000125_端末見積書検索サブフォーム
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-156#comment-732589585)
-
-#### 27. [POS_UI-182] C000124_未承認一覧表示
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下修正をお願いします。
-> ・本チケットのタイトルを「C000124_未印刷一覧表示」に修正をお願いします。
-> ・タイトルは「見積書未印刷一覧（配送端末）」に修正
-> ・選択列のヘッダーはチェックボックスコントロールを置かずに、文言"選択"にする
-> ・以下画像赤枠の機能ボタンは引き継ぎたいので、ボタンを追加 または 別の手段で機能が実行できるようなデザインに修正
-> *(có đính kèm ảnh)*
-> 　また、本機能は承認された見積書を印刷するメニューなので、青色ボタンは「印刷」にする
-> ・スクロールバーが金額欄と重なっているため、重ならないように調整
-> 　→ 売上画面のスクロールバー仕様と異なっている
-> ・サンプルとして表示する明細情報は、Noごとに異なる内容にする
-> 　あわせて、ツールチップ表示のデザインを追加
-> 　→ 他画面についても同様に対応
-> ・現行では1ページ18明細表示なので、可能な限り18明細に近い明細数を表示できるよう上下余白を調整
-
-#### 28. [POS_UI-183] C000127_詳細
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 現行ではあんしんパスポート会員ではない顧客の見積書の場合は、その旨を表示しています。
-> この仕様は引き継ぎたいため、デザインの追加をお願いします。
-> *(có đính kèm ảnh)*
-
-#### 29. [POS_UI-184] C000126_印刷確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・「お客様控えのみ」「会員番号記載」のみでは直感的に分かりにくいため、
-> 「お客様控えのみを印刷」「見積書に会員番号を記載」に文言変更をお願いします。
-> 
-> ・「C000124_未印刷一覧表示」で印刷をする場合、現行では以下のデザイン、流れになります。
-> *(có đính kèm ảnh)*
-> ↓
-> *(có đính kèm ảnh)*
-
-#### 30. [POS_UI-185] C000128_別紙内容確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-160#comment-734882594)
-
-#### 31. [POS_UI-186] C000129_次回訪問予定
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-161#comment-734888361)
-
-#### 32. [POS_UI-187] C000130_見積内容
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-162#comment-734913270)
-
-#### 33. [POS_UI-188] C000131_見積結果
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-163#comment-734915564)
-
-#### 34. [POS_UI-190] C000133_店舗への連絡
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-164#comment-734921550)
-
-#### 35. [POS_UI-191] C000134_コメント
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
-> ・以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-166#comment-734924654)
-
-### 📋 見積・承認系 (Báo giá / Phê duyệt) — Nhóm C000110-121  (9 tickets)
-
-#### 36. [POS_UI-155] C000110_検索方法選択
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 五月雨式で申し訳ありませんが、以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-180#comment-734964609)
-
-#### 37. [POS_UI-157] C000111_未承認一覧表示
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 申し訳ございません。
-> 以下コメントの
-> 「・以下画像赤枠の機能ボタン（端末見積検索は除く）は引き継ぎたいので、ボタンを追加 または 別の手段で機能が実行できるようなデザインに修正」
-> については、ボタン配置場所の検討を進めますので一旦保留でお願いいたします。
-> [link](https://siconnect.backlog.com/view/POS_UI-157#comment-734851135)
-
-#### 38. [POS_UI-158] C000114_詳細
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 現行ではあんしんパスポート会員ではない顧客の見積書の場合は、その旨を表示しています。
-> この仕様は引き継ぎたいため、デザインの追加をお願いします。
-> *(có đính kèm ảnh)*
-
-#### 39. [POS_UI-160] C000115_別紙内容確認
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> [link](https://siconnect.backlog.com/view/POS_UI-160#comment-734882594)
-> 申し訳ございません。上記コメントについてです。
-> 添付画像の画面「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加するデザインにしていただきますようお願いします。
-> *(có đính kèm ảnh)*
-
-#### 40. [POS_UI-161] C000116_次回訪問予定
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-160#comment-736195478)
-> 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
-
-#### 41. [POS_UI-162] C000117_見積内容
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-160#comment-736195478)
-> 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
-
-#### 42. [POS_UI-163] C000118_見積結果
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-160#comment-736195478)
-> 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
-
-#### 43. [POS_UI-165] C000120_店舗への連絡
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-160#comment-736195478)
-> 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
-
-#### 44. [POS_UI-166] C000121_コメント
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> 以下コメントの対応をお願いします。
-> [link](https://siconnect.backlog.com/view/POS_UI-160#comment-736195478)
-> 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
-
-### 🗺 エリア・検索系 (Khu vực / Tìm kiếm)  (1 tickets)
-
-#### 45. [POS_UI-175] B0401エリア絞込
-
-- [ ] Đọc feedback và hiểu yêu cầu sửa
-- [ ] Thực hiện sửa thiết kế
-- [ ] Self-review theo checklist POS_UI guideline
-- [ ] Upload bản sửa lên Backlog
-- [ ] Cập nhật status → 20_確認待ち
-
-> **Feedback từ khách:**
-> @VTI アイン 
-> ・エリアコードは中央揃えで表示してください。
-> ・エリア名称は最大で全角３０文字なので、その文字数がゆとりある形で入る程度の列幅で問題ありません。
-> 　そのうえで、サブフォームのサイズ調整をお願いします。
-> ・同じデータが表示されることは想定していないため、表示データは各Noバラバラにしてください。
-> ・スクロールバーが明細に被らないよう調整してください。
-> ・ボタン名は「進む」ではなく、「確定」にしてください。
-> 
-> また、申し訳ありませんが「特定エリア表示」ボタンは削除でお願いします。
-> 本メニューでは、現在使用されていない機能のようです。
+## Checklist Chi tiết
+
+| # | Phân loại / Nhóm | Flow / Screen | Check Item (Rule) | 出典 | Mandatory | Round 1 | Round 2 | Round 3 | Remark |
+|---|---|---|---|---|---|---|---|---|---|
+| **1** | **Header & Navigation** | | | | | | | | |
+| 1.1 | Header & Navigation | C000123/124/125/126/127/128/129/130/131/133/134 | Tiêu đề màn hình có được đổi thành「見積書未印刷一覧（配送端末）」không? | POS_UI-180,181,182,184,185,186,187,188,190,191 | M | | | | Áp dụng đồng loạt toàn bộ nhóm màn 見積書未印刷 |
+| 1.2 | Header & Navigation | C000180_指定方法選択 | Từ「指定方法」chỉ xuất hiện 1 lần trong tiêu đề; guide「～を選択してください」và vùng xanh lá「検索方法」có được xóa không? | POS_UI-174 | | | | | |
+| 1.3 | Header & Navigation | C000123_検索方法選択 | Từ「検索方法」chỉ xuất hiện 1 lần; guide trùng lặp có được xóa, vùng xanh sửa thành text「検索方法選択」, nút「指定なし」→「指定せずに検索」không? | POS_UI-180 | | | | | |
+| 1.4 | Header & Navigation | 元伝決済時カード持ち確認 | Tiêu đề「元伝決済時カード」ở phía trên màn hình có được xóa không? | POS_UI-198 | M | | | | |
+| 1.5 | Header & Navigation | 元伝カード決済引き継ぎの確認 | Tiêu đề「元伝カード決済」ở phía trên màn hình có được xóa không? | POS_UI-197 | M | | | | |
+| 1.6 | Header & Navigation | C000103/C000104 | Footer progress bar không cần thiết có được xóa khỏi màn hình in不? | POS_UI-148,149 | | | | | |
+| 1.7 | Header & Navigation | C000178_配送工事区分選択 | Guide message có được cập nhật nội dung phù hợp với màn hình hiện tại (không dùng guide của 予約担当者入力) không? | POS_UI-173 | | | | | |
+| **2** | **UI Components & Controls** | | | | | | | | |
+| 2.1 | UI Components & Controls | C000048/C000047/C000178 | Thiết kế button thời gian (時間帯) có được đồng bộ theo chuẩn màn 配送情報変更_時間帯選択 không? | POS_UI-69,173,201 | M | | | | Áp dụng đồng loạt mọi màn có 時間帯 |
+| 2.2 | UI Components & Controls | C000180/C000123 | Kích thước button「閉じる」có được thu nhỏ khớp với các màn hình khác (không cùng cỡ button chính khiến trông như 3 lựa chọn) không? | POS_UI-174,180 | | | | | |
+| 2.3 | UI Components & Controls | C000181/C000182/B0401 | Button không cần dùng (「確定」ボタン不要, 「特定エリア表示」削除) có được xóa không? | POS_UI-175,176,178 | | | | | |
+| 2.4 | UI Components & Controls | B0401エリア絞込 | Tên button「進む」có được đổi thành「確定」không? | POS_UI-175 | M | | | | |
+| 2.5 | UI Components & Controls | C000185_明細入力 | Tên button「取消」có được đổi thành「在庫予約を取消」không? | POS_UI-167 | M | | | | |
+| 2.6 | UI Components & Controls | C000181/C000182 | Button「印刷」có được tô màu xanh (青いボタン) không? | POS_UI-176,178 | | | | | |
+| 2.7 | UI Components & Controls | C000178_配送工事区分選択 | Thiết kế màn hình khi keyboard hiển thị (入力時) có được tạo không? | POS_UI-173 | | | | | |
+| 2.8 | UI Components & Controls | C000178_配送工事区分選択 | Khi số lượng thời gian = 0, hiển thị「0/10」và button ở trạng thái 非活性 (không thể nhấn) có được thiết kế không? | POS_UI-173 | | | | | |
+| 2.9 | UI Components & Controls | C000103/C000104 | Checkbox「予定日未定」(không cần vì ngày luôn xác định khi phát hành hóa đơn) có được xóa không? | POS_UI-148,149 | M | | | | |
+| 2.10 | UI Components & Controls | C000124_未印刷一覧表示 | Header cột "選択" có dùng label text「選択」thay vì checkbox control không? | POS_UI-182 | | | | | |
+| 2.11 | UI Components & Controls | B0401/C000181/C000182/C000124 | Scrollbar có được điều chỉnh không đè lên vùng dữ liệu (明細・金額欄) không? | POS_UI-175,176,178,182 | | | | | |
+| **3** | **Hiển thị & Đồng bộ Thông tin** | | | | | | | | |
+| 3.1 | Hiển thị & Đồng bộ | 元伝と新黒決済確認 | お買上げ総数・総額が最新デザインに反映されているか? (画像赤枠) | POS_UI-195 | M | | | | |
+| 3.2 | Hiển thị & Đồng bộ | 元伝と新黒決済確認 | 未決済金額がデザインに反映されているか? (画像青枠) | POS_UI-195 | M | | | | |
+| 3.3 | Hiển thị & Đồng bộ | C000176_空き状況一覧表示 | Vùng「センター店」chỉ hiển thị 店舗名 (không hiển thị 法人-店舗コード vì đã có ở vùng trái) không? | POS_UI-171 | M | | | | |
+| 3.4 | Hiển thị & Đồng bộ | C000176_空き状況一覧表示 | Độ rộng hiển thị 店舗名 có tính đến tối đa 全角16文字 không? Dữ liệu mẫu có dùng chuỗi tối đa không? | POS_UI-171 | | | | | |
+| 3.5 | Hiển thị & Đồng bộ | C000114/C000127_詳細 | Khi khách hàng không phải hội viên あんしんパスポート, màn hình có hiển thị thông báo tương ứng không? | POS_UI-158,183 | M | | | | Giữ nguyên spec hiện hành |
+| 3.6 | Hiển thị & Đồng bộ | C000186_在庫引当確認 | Câu「DC在庫の引当を行いますか。」có font size đủ lớn và nổi bật không? Tiêu đề trùng nội dung có được xóa không? | POS_UI-169 | | | | | |
+| 3.7 | Hiển thị & Đồng bộ | C000186_在庫引当確認 | Lựa chọn có được đổi thành「いいえ」「はい」không? | POS_UI-169 | M | | | | |
+| 3.8 | Hiển thị & Đồng bộ | C000181/C000182 | Thiết kế cả 2 trạng thái: đã nhập (入力済み) và chưa nhập (未入力) đều có không? | POS_UI-176,178 | M | | | | |
+| 3.9 | Hiển thị & Đồng bộ | B0401/C000181/C000182/C000124 | Dữ liệu mẫu trong từng dòng có nội dung khác nhau (không lặp cùng một data) không? | POS_UI-175,176,178,182 | | | | | |
+| 3.10 | Hiển thị & Đồng bộ | C000181/C000182 | Địa chỉ hiển thị「都道府県＋市」thay vì「ミトミツクニ」không? | POS_UI-176,178 | M | | | | |
+| 3.11 | Hiển thị & Đồng bộ | C000176_空き状況一覧表示 | Chức năng 前週/今週/翌週 đã phản ánh đúng spec: 今週 thì 前週 không chuyển được; 翌週 có thể xem đến hơn 1 năm tới không? | POS_UI-171 | | | | | |
+| 3.12 | Hiển thị & Đồng bộ | C000176_空き状況一覧表示 | Lỗi chính tả「アリア」có được sửa thành「エリア」không? | POS_UI-171 | M | | | | |
+| 3.13 | Hiển thị & Đồng bộ | C000181/C000182 | Lỗi chữ Hán trong「頻度」có được sửa đúng không? | POS_UI-176,178 | M | | | | |
+| 3.14 | Hiển thị & Đồng bộ | C000185_明細入力 | Thiết kế trường hợp không có tồn kho (在庫なし, No1 display) có được tạo không? | POS_UI-167 | | | | | |
+| 3.15 | Hiển thị & Đồng bộ | C000101_請求書一覧 | Màn hình明細 in hóa đơn có được thêm vào Figma 画面遷移図 không? | POS_UI-140 | | | | | |
+| 3.16 | Hiển thị & Đồng bộ | C000183/C000176 | Ticket POS_UI-203 có được xác nhận trùng với POS_UI-171 và xử lý (đóng hoặc hợp nhất) không? | POS_UI-203 | | | | | Cần confirm với PM |
+| **4** | **Cấu trúc Layout & Vị trí Thông tin** | | | | | | | | |
+| 4.1 | Layout & Vị trí | B0401/C000181/C000182 | Data dạng code (エリアコード, JISコード, 配送頻度) có căn giữa (中央揃え) không? | POS_UI-175,176,178 | M | | | | Chuẩn: code → center, text → left |
+| 4.2 | Layout & Vị trí | B0401エリア絞込 | Độ rộng cột エリア名称 có đủ cho tối đa 全角30文字 với margin thoải mái không? Kích thước subform có được điều chỉnh không? | POS_UI-175 | | | | | |
+| 4.3 | Layout & Vị trí | C000185_明細入力 | Hiển thị明細 có dùng dạng card (カード形式) giống màn hình 売上, không dùng bảng (表形式) không? | POS_UI-167 | M | | | | |
+| 4.4 | Layout & Vị trí | C000185_明細入力 | Tối đa 3明細 / 1 giao dịch có đủ không gian hiển thị không? | POS_UI-167 | M | | | | |
+| 4.5 | Layout & Vị trí | C000103/C000104/C000105 | Nhãn「販売担当者」có được đổi thành「印刷担当者」không? | POS_UI-148,149,150 | M | | | | |
+| 4.6 | Layout & Vị trí | C000103/C000104 | Văn bản trong khung【請求書　印刷サンプル】có gói gọn trong 1 dòng không? Tên khung【法求出...】có được sửa thành【請求書　印刷サンプル】không? | POS_UI-148,149 | | | | | |
+| 4.7 | Layout & Vị trí | C000104_お支払予定日 | Label「お支払予定日」chỉ hiển thị 1 lần không? | POS_UI-149 | | | | | |
+| 4.8 | Layout & Vị trí | C000103_請求書日付 | Label「元伝の決済」không cần thiết có được xóa không? | POS_UI-148 | | | | | |
+| 4.9 | Layout & Vị trí | C000185_明細入力 | Button「在庫予約を取消」(戻る系) có được đặt ở bên trái không? | POS_UI-167 | | | | | |
+| 4.10 | Layout & Vị trí | C000126_印刷確認 | Text button đã đổi thành「お客様控えのみを印刷」và「見積書に会員番号を記載」chưa? | POS_UI-184 | M | | | | Từ cũ ngắn quá, không trực quan |
+| 4.11 | Layout & Vị trí | C000178_配送工事区分選択 | Vùng「エリア」hiển thị tên khu vực giao hàng/công trình (水戸, いわき, ...) không phải 店舗コード/店舗名 không? | POS_UI-173 | M | | | | |
+| **5** | **Screen Flow & Luồng Xử lý** | | | | | | | | |
+| 5.1 | Screen Flow | 元伝決済時カード持ち確認 | Sau khi chọn「元伝決済時カード」luồng có chuyển màn tự động không, hay cần thêm button xác nhận? (cần confirm với khách trước khi thiết kế) | POS_UI-198 | | | | | Chờ confirm spec từ khách |
+| 5.2 | Screen Flow | C000101_請求書・納品書 | Màn hình in có được thiết kế theo hướng 商品明細 không thể thêm/xóa/sửa (read-only) không? | POS_UI-140 | M | | | | |
+| 5.3 | Screen Flow | C000181/C000182 | Màn hình sau khi nhấn button「宅配不可エリア」có được thiết kế không? | POS_UI-176,178 | | | | | |
+| 5.4 | Screen Flow | C000126_印刷確認 | Luồng in từ màn hình「未印刷一覧表示」có phản ánh đúng flow hiện hành của khách không? | POS_UI-184 | | | | | |
+| **6** | **Input Fields & Form Design** | | | | | | | | |
+| 6.1 | Input Fields | C000106_摘要入力 | Thiết kế có thể hiện đúng spec: 1行全角45文字×5行 với MAX文字数 không? Nếu thừa khoảng trắng có điều chỉnh không? | POS_UI-151 | M | | | | |
+| 6.2 | Input Fields | C000185_明細入力 | Chức năng tìm kiếm theo型番 có button hoặc giải pháp khác được thiết kế không? | POS_UI-167 | | | | | |
+| 6.3 | Input Fields | C000185/C000182/C000124 | Tooltip có được thiết kế cho các vị trí hiển thị「...」(văn bản bị cắt ngắn) không? | POS_UI-167,182 | | | | | |
+| 6.4 | Input Fields | C000123_検索方法選択 | Thiết kế có dùng nền trắng (白背景) cho popup chọn phương thức, không đè lên màn hình担当者 không? | POS_UI-180 | | | | | |
+| 6.5 | Input Fields | C000110_検索方法選択 | Các sửa đổi theo comment POS_UI-180 có được áp dụng đồng bộ cho C000110 không? | POS_UI-155 | | | | | C000110 dùng chung spec với C000123 |
+| **7** | **Tab & Thông tin Chi tiết / Consistency** | | | | | | | | |
+| 7.1 | Tab & Consistency | C000114_詳細 | Màn hình「C000114_詳細」có được thêm đủ các tab:「次回訪問予定」「別紙内容確認」「見積内容」「見積結果」「フリー入力」「店舗への連絡」「コメント」không? | POS_UI-158,160,161,162,163,165,166,183,185,186,187,188,190,191 | M | | | | Áp dụng đồng loạt C000114～C000134 |
+| 7.2 | Tab & Consistency | C000124_未印刷一覧表示 | Button xanh trong màn in đã được đặt tên「印刷」chưa? (menu in見積書đã duyệt) | POS_UI-182 | | | | | |
+| 7.3 | Tab & Consistency | C000124_未印刷一覧表示 | Các button chức năng (赤枠) từ màn hình cũ đã được thêm lại hoặc có giải pháp thay thế chưa? | POS_UI-182 | | | | | |
+| 7.4 | Tab & Consistency | A0426_新黒伝決済（お預かり金額入力） | Thiết kế có được đồng bộ với các menu khác trong cùng hệ thống không? | POS_UI-82 | M | | | | ⚠️ Due: 2026-03-31 |
+| 7.5 | Tab & Consistency | C000111_未承認一覧表示 | Yêu cầu thêm button chức năng đang tạm hoãn (保留) — có xác nhận không làm trong round này không? | POS_UI-157 | | | | | Không cần làm, chờ khách confirm vị trí |
+| 7.6 | Tab & Consistency | C000053_お客様情報 | Các sửa đổi theo comment gốc POS_UI-40 có được áp dụng không? | POS_UI-73 | | | | | ⚠️ Due: 2026-03-31 — kiểm tra comment POS_UI-40 |
+
+---
+
+Summary: Number of OK / NOK / N/A items (per Round). Review Result: Pass / Review Again / Acceptable.
