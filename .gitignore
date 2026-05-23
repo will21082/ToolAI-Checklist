@@ -1,3 +1,9 @@
+# Sensitive / local settings — never commit
+.claude/settings.local.json
+.env
+.env.*
+!.env.example
+
 # Temp files
 .tmp/
 *.tmp
