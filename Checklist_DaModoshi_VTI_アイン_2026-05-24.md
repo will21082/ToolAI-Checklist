@@ -1,148 +1,141 @@
 # SHARP POS UI — Design Review Checklist
-> Tổng hợp từ Backlog · Assignee: VTI アイン · Status: 30_差戻／修正依頼
+> VTI アイン · 30_差戻／修正依頼 · 2026-05-24 · Chuẩn: Checklist_Screen_Design_VN.md
 
 | | |
 |---|---|
 | Tổng tickets | 45 |
-| Tổng check items | 133 |
-| Ngày tổng hợp | 2026-05-24 |
-| Chuẩn áp dụng | Checklist_Screen_Design_VN.md |
+| Tổng việc cần sửa | 133 |
+| Ngày | 2026-05-24 |
 
-**Cách dùng:** Sau khi sửa xong mỗi ticket → điền `OK` / `NOK` / `N/A` vào Round 1 → upload Backlog → đổi status `20_確認待ち`.
+**Cách dùng:** Sửa xong từng dòng → điền `OK` / `NOK` / `N/A` vào Round 1 → khi tất cả OK → upload → đổi status Backlog `20_確認待ち`.
 
 ---
 
 ## [POS_UI-69] C000048_時間帯選択 · ⚠️ Due: **2026-03-31**
-- Màn hình: C000048
+- Màn hình: C000048_時間帯選択
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-69
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-69
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | UI Components & Controls | Thiết kế button 時間帯 đã được đồng bộ theo chuẩn màn 配送情報変更_時間帯選択 chưa? | POS_UI-69 | | | | M |  |
+| 1 | UI Components & Controls | Đồng bộ thiết kế button 時間帯 theo chuẩn màn 配送情報変更_時間帯選択 | POS_UI-69 | | | |  |  |
 
 ---
 
 ## [POS_UI-72] C000052_別紙案内 · ⚠️ Due: **2026-03-31**
-- Màn hình: C000052
+- Màn hình: C000052_別紙案内
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-18
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-72
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-18
+- Link: https://siconnect.backlog.com/view/POS_UI-72
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — cần mở Backlog xem comment gốc)* | POS_UI-72 | | | |  | Due 2026-03-31 |
+| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — mở Backlog xem comment gốc trước khi sửa)* | POS_UI-72 | | | |  | Due 2026-03-31 |
 
 ---
 
 ## [POS_UI-73] C000053_お客様情報 · ⚠️ Due: **2026-03-31**
-- Màn hình: C000053
+- Màn hình: C000053_お客様情報
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-07
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-73
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-07
+- Link: https://siconnect.backlog.com/view/POS_UI-73
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > 以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment gốc tại POS_UI-40 đã được áp dụng đầy đủ chưa? | POS_UI-73 | | | |  | Cần mở POS_UI-40 xem comment. Due 2026-03-31 |
+| 1 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment gốc tại POS_UI-40 | POS_UI-73 | | | |  | Mở POS_UI-40 xem comment. Due 2026-03-31 |
 
 ---
 
 ## [POS_UI-82] A0426_新黒伝決済（お預かり金額入力） · ⚠️ Due: **2026-03-31**
-- Màn hình: A0426
+- Màn hình: A0426_新黒伝決済（お預かり金額入力）
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-07
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-82
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-07
+- Link: https://siconnect.backlog.com/view/POS_UI-82
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > 他のメニューとデザインが異なりますので統一をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tab & Thông tin Chi tiết / Consistency | Thiết kế (màu, font, button, layout) đã được đồng bộ với các menu khác trong cùng hệ thống chưa? | POS_UI-82 | | | | M | Due 2026-03-31 |
+| 1 | Tab & Thông tin Chi tiết / Consistency | Đồng bộ thiết kế (màu, font, button, layout) với các menu khác trong hệ thống | POS_UI-82 | | | |  | Due 2026-03-31 |
 
 ---
 
 ## [POS_UI-139] C000095_明細入力
-- Màn hình: C000095
+- Màn hình: C000095_明細入力
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-18
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-139
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-18
+- Link: https://siconnect.backlog.com/view/POS_UI-139
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — cần mở Backlog xem comment gốc)* | POS_UI-139 | | | |  |  |
+| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — mở Backlog xem comment gốc trước khi sửa)* | POS_UI-139 | | | |  |  |
 
 ---
 
 ## [POS_UI-140] C000101_請求書一覧／納品書一覧表示
-- Màn hình: C000101
+- Màn hình: C000101_請求書一覧／納品書一覧表示
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-07
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-140
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-07
+- Link: https://siconnect.backlog.com/view/POS_UI-140
 
-**Feedback khách:**
-> 、こちらに添付をお願いします。
-> ・請求書、納品書印刷画面では商品明細の追加、削除、修正は行えません。
-> 商品明細が編集できない前提のデザインにしていただけますでしょうか。
-
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Screen Flow & Luồng Xử lý | Màn hình 明細 in 請求書 đã được thêm vào Figma 画面遷移図 chưa? | POS_UI-140 | | | |  |  |
-| 2 | Screen Flow & Luồng Xử lý | Màn hình in 請求書/納品書 đã được thiết kế theo hướng 商品明細 read-only (không có nút thêm/xóa/sửa) chưa? | POS_UI-140 | | | | M |  |
+| 1 | Screen Flow & Luồng Xử lý | Thêm màn hình 明細 in 請求書 vào Figma 画面遷移図 | POS_UI-140 | | | |  |  |
+| 2 | Screen Flow & Luồng Xử lý | Thiết kế lại màn in 請求書/納品書: 商品明細 read-only, bỏ toàn bộ nút thêm/xóa/sửa | POS_UI-140 | | | |  |  |
 
 ---
 
 ## [POS_UI-148] C000103_請求書日付
-- Màn hình: C000103
+- Màn hình: C000103_請求書日付
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-148
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-148
 
-**Feedback khách:**
-> 。
-> ・販売担当者ではなく、印刷担当者に修正
-> ・「元伝の決済」ラベルは不要
-> ・請求書発行時は日付が必ず決まっているので、「予定日未定」チェックボックスは削除
-> ・【請求書　印刷サンプル】の枠線で囲まれた～ の文は１行に収める
+**Feedback khách (nguyên văn):**
+> ～ の文は１行に収める
 > ・【法求出 印刷サンプル】→【請求書　印刷サンプル】に修正
 > ・文言の位置は以下画像に合わせる
 > *(ảnh đính kèm)*
 > ・フッターの進捗バーは不要
 > ※既成のデザインを流用いただくのは問題ありませんが、現行画面を見比べていただきますようお願いいたします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Hiển thị & Đồng bộ Thông tin | Label đã đổi「販売担当者」→「印刷担当者」chưa? | POS_UI-148 | | | | M |  |
-| 2 | Hiển thị & Đồng bộ Thông tin | Label「元伝の決済」không cần thiết đã được xóa chưa? | POS_UI-148 | | | |  |  |
-| 3 | UI Components & Controls | Checkbox「予定日未定」đã được xóa chưa? (ngày luôn xác định khi phát hành hóa đơn) | POS_UI-148 | | | | M |  |
-| 4 | Cấu trúc Layout & Vị trí Thông tin | Văn bản trong khung【請求書　印刷サンプル】đã được gói gọn trong 1 dòng chưa? | POS_UI-148 | | | |  |  |
-| 5 | Hiển thị & Đồng bộ Thông tin | Tên khung【法求出 印刷サンプル】đã sửa thành【請求書　印刷サンプル】chưa? | POS_UI-148 | | | |  |  |
-| 6 | Header & Navigation | Footer progress bar không cần thiết đã được xóa chưa? | POS_UI-148 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi label「販売担当者」→「印刷担当者」 | POS_UI-148 | | | |  |  |
+| 2 | Hiển thị & Đồng bộ Thông tin | Xóa label「元伝の決済」(không cần thiết) | POS_UI-148 | | | |  |  |
+| 3 | UI Components & Controls | Xóa checkbox「予定日未定」(ngày luôn xác định khi phát hành hóa đơn) | POS_UI-148 | | | |  |  |
+| 4 | Cấu trúc Layout & Vị trí Thông tin | Gói văn bản trong khung【請求書　印刷サンプル】vào 1 dòng | POS_UI-148 | | | |  |  |
+| 5 | Hiển thị & Đồng bộ Thông tin | Sửa tên khung 「法求出 印刷サンプル」→「請求書　印刷サンプル」 | POS_UI-148 | | | |  | Sửa 2 ký tự đầu: 法求出 → 請求書 |
+| 6 | UI Components & Controls | Xóa footer progress bar (không cần thiết ở màn in này) | POS_UI-148 | | | |  |  |
 
 ---
 
 ## [POS_UI-149] C000104_お支払予定日
-- Màn hình: C000104
+- Màn hình: C000104_お支払予定日
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-149
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-149
 
-**Feedback khách:**
-> 。
-> ・販売担当者ではなく、印刷担当者に修正
-> ・「お支払予定日」ラベル1つのみ表示
-> ・請求書発行時は日付が必ず決まっているので、「予定日未定」チェックボックスは削除
-> ・【請求書　印刷サンプル】の枠線で囲まれた～ の文は１行に収める
+**Feedback khách (nguyên văn):**
+> ～ の文は１行に収める
 > ・【法求出 印刷サンプル】→【請求書　印刷サンプル】に修正
 > ・赤枠の位置が違います。添付画像青枠の位置にする
 > *(ảnh đính kèm)*
@@ -151,221 +144,219 @@
 > ・フッターの進捗バーは不要
 > ※既成のデザインを流用いただくのは問題ありませんが、現行画面を見比べていただきますようお願いいたします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Hiển thị & Đồng bộ Thông tin | Label đã đổi「販売担当者」→「印刷担当者」chưa? | POS_UI-149 | | | | M |  |
-| 2 | Hiển thị & Đồng bộ Thông tin | Label「お支払予定日」đã chỉ hiển thị 1 lần chưa? | POS_UI-149 | | | |  |  |
-| 3 | UI Components & Controls | Checkbox「予定日未定」đã được xóa chưa? | POS_UI-149 | | | | M |  |
-| 4 | Cấu trúc Layout & Vị trí Thông tin | Văn bản trong khung【請求書　印刷サンプル】đã được gói gọn trong 1 dòng chưa? | POS_UI-149 | | | |  |  |
-| 5 | Hiển thị & Đồng bộ Thông tin | Tên khung【法求出 印刷サンプル】đã sửa thành【請求書　印刷サンプル】chưa? | POS_UI-149 | | | |  |  |
-| 6 | Header & Navigation | Footer progress bar đã được xóa chưa? | POS_UI-149 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi label「販売担当者」→「印刷担当者」 | POS_UI-149 | | | |  |  |
+| 2 | Hiển thị & Đồng bộ Thông tin | Xóa label「お支払予定日」trùng, chỉ giữ 1 cái | POS_UI-149 | | | |  |  |
+| 3 | UI Components & Controls | Xóa checkbox「予定日未定」(ngày luôn xác định khi phát hành) | POS_UI-149 | | | |  |  |
+| 4 | Cấu trúc Layout & Vị trí Thông tin | Gói văn bản trong khung【請求書　印刷サンプル】vào 1 dòng | POS_UI-149 | | | |  |  |
+| 5 | Hiển thị & Đồng bộ Thông tin | Sửa tên khung「法求出 印刷サンプル」→「請求書　印刷サンプル」 | POS_UI-149 | | | |  |  |
+| 6 | UI Components & Controls | Xóa footer progress bar | POS_UI-149 | | | |  |  |
 
 ---
 
 ## [POS_UI-150] C000105_お客様氏名
-- Màn hình: C000105
+- Màn hình: C000105_お客様氏名
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-150
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-150
 
-**Feedback khách:**
-> 、印刷担当者に修正をお願いします。
-
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Hiển thị & Đồng bộ Thông tin | Label đã đổi「販売担当者」→「印刷担当者」chưa? | POS_UI-150 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi label「販売担当者」→「印刷担当者」 | POS_UI-150 | | | |  |  |
 
 ---
 
 ## [POS_UI-151] C000106_摘要入力
-- Màn hình: C000106
+- Màn hình: C000106_摘要入力
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-151
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-151
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > ×５行となります。
 > ”MAX文字数入れたデザインの作成をお願いします。
 > もし余白が余る場合は、調整をお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Input Fields & Form Design | Textbox đã thể hiện đúng spec 1行全角45文字×5行 chưa? | POS_UI-151 | | | | M |  |
-| 2 | Input Fields & Form Design | Thiết kế đã có trường hợp MAX văn bản (45×5) chưa? | POS_UI-151 | | | | M |  |
-| 3 | Cấu trúc Layout & Vị trí Thông tin | Layout đã được điều chỉnh nếu thừa khoảng trắng sau MAX text chưa? | POS_UI-151 | | | |  |  |
+| 1 | Input Fields & Form Design | Thiết kế textbox theo đúng spec: 1行全角45文字×5行 | POS_UI-151 | | | |  |  |
+| 2 | Input Fields & Form Design | Thêm trường hợp MAX văn bản (45 ký tự × 5 dòng) vào design | POS_UI-151 | | | |  |  |
+| 3 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh layout nếu thừa khoảng trắng khi text đầy MAX | POS_UI-151 | | | |  |  |
 
 ---
 
 ## [POS_UI-155] C000110_検索方法選択
-- Màn hình: C000110
+- Màn hình: C000110_検索方法選択
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-155
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-155
 
-**Feedback khách:**
-> 、以下コメントの対応をお願いします。
+**Feedback khách (nguyên văn):**
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-155 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment POS_UI-180 (C000123 cùng loại màn) đã được áp dụng đồng bộ chưa? | POS_UI-155 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-155 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng đồng bộ các sửa đổi theo comment POS_UI-180 (C000123 cùng loại màn) | POS_UI-155 | | | |  |  |
 
 ---
 
 ## [POS_UI-157] C000111_未承認一覧表示
-- Màn hình: C000111
+- Màn hình: C000111_未承認一覧表示
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-157
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-157
 
-**Feedback khách:**
-> 。
-> 以下コメントの
-> 「・以下画像赤枠の機能ボタン（端末見積検索は除く）は引き継ぎたいので、ボタンを追加 または 別の手段で機能が実行できるようなデザインに修正」
+**Feedback khách (nguyên văn):**
+> （端末見積検索は除く）は引き継ぎたいので、ボタンを追加 または 別の手段で機能が実行できるようなデザインに修正」
 > については、ボタン配置場所の検討を進めますので一旦保留でお願いいたします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | UI Components & Controls | Đã xác nhận yêu cầu thêm button (vùng đỏ) đang 保留 — chưa làm trong round này chưa? | POS_UI-157 | | | |  | Chờ khách confirm vị trí button |
+| 1 | UI Components & Controls | Xác nhận item thêm button (vùng đỏ) đang 保留 — không làm round này, chờ khách confirm vị trí | POS_UI-157 | | | |  |  |
 
 ---
 
 ## [POS_UI-158] C000114_詳細
-- Màn hình: C000114
+- Màn hình: C000114_詳細
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-158
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-158
 
-**Feedback khách:**
-> 、その旨を表示しています。
-> この仕様は引き継ぎたいため、デザインの追加をお願いします。
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Hiển thị & Đồng bộ Thông tin | Trường hợp khách hàng không phải hội viên あんしんパスポート đã được thêm thông báo tương ứng (giống hiện hành) chưa? | POS_UI-158 | | | | M | Xem ảnh đính kèm trong ticket |
+| 1 | Hiển thị & Đồng bộ Thông tin | Thêm thông báo cho trường hợp khách hàng không phải hội viên あんしんパスポート (theo hiện hành) | POS_UI-158 | | | |  | Xem ảnh đính kèm trong ticket |
 
 ---
 
 ## [POS_UI-160] C000115_別紙内容確認
-- Màn hình: C000115
+- Màn hình: C000115_別紙内容確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-160
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-160
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > *(link)*
 > 申し訳ございません。上記コメントについてです。
 > 添付画像の画面「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加するデザインにしていただきますようお願いします。
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-160 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Tab「別紙内容確認」đã được thêm vào màn C000114_詳細 chưa? | POS_UI-160 | | | | M | Xem ảnh đính kèm |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-160 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Thêm tab「別紙内容確認」vào màn C000114_詳細 | POS_UI-160 | | | |  | Xem ảnh đính kèm |
 
 ---
 
 ## [POS_UI-161] C000116_次回訪問予定
-- Màn hình: C000116
+- Màn hình: C000116_次回訪問予定
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-161
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-161
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(link)*
 > 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-161 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Tab「次回訪問予定」đã được thêm vào màn C000114_詳細 chưa? | POS_UI-161 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-161 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Thêm tab「次回訪問予定」vào màn C000114_詳細 | POS_UI-161 | | | |  |  |
 
 ---
 
 ## [POS_UI-162] C000117_見積内容
-- Màn hình: C000117
+- Màn hình: C000117_見積内容
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-162
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-162
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(link)*
 > 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-162 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Tab「見積内容」đã được thêm vào màn C000114_詳細 chưa? | POS_UI-162 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-162 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Thêm tab「見積内容」vào màn C000114_詳細 | POS_UI-162 | | | |  |  |
 
 ---
 
 ## [POS_UI-163] C000118_見積結果
-- Màn hình: C000118
+- Màn hình: C000118_見積結果
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-163
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-163
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(link)*
 > 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-163 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Tab「見積結果」đã được thêm vào màn C000114_詳細 chưa? | POS_UI-163 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-163 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Thêm tab「見積結果」vào màn C000114_詳細 | POS_UI-163 | | | |  |  |
 
 ---
 
 ## [POS_UI-165] C000120_店舗への連絡
-- Màn hình: C000120
+- Màn hình: C000120_店舗への連絡
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-165
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-165
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(link)*
 > 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-165 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Tab「店舗への連絡」đã được thêm vào màn C000114_詳細 chưa? | POS_UI-165 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-165 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Thêm tab「店舗への連絡」vào màn C000114_詳細 | POS_UI-165 | | | |  |  |
 
 ---
 
 ## [POS_UI-166] C000121_コメント
-- Màn hình: C000121
+- Màn hình: C000121_コメント
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-166
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-166
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(link)*
 > 「C000114_詳細」に、「次回訪問予定」～「コメント」のタブを追加したデザインにしていただきますようお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-166 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Tab「コメント」đã được thêm vào màn C000114_詳細 chưa? | POS_UI-166 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-166 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Thêm tab「コメント」vào màn C000114_詳細 | POS_UI-166 | | | |  |  |
 
 ---
 
 ## [POS_UI-167] C000185_明細入力
-- Màn hình: C000185
+- Màn hình: C000185_明細入力
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-167
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-167
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 > ・型番の文字数が少ないと思います。
 > 表形式ではなく、売上と同じカード形式としていただきますようお願いします。
@@ -392,48 +383,48 @@
 > ・取消の場合は数量も表示しますので、デザインに反映をお願いします。（以下画像赤枠を参考）
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Cấu trúc Layout & Vị trí Thông tin | Hiển thị 明細 đã đổi từ 表形式 sang カード形式 (giống màn 売上) chưa? | POS_UI-167 | | | | M | Lý do: 型番 quá ngắn khi dùng bảng |
-| 2 | Cấu trúc Layout & Vị trí Thông tin | Tối đa 3 明細/giao dịch đã có đủ không gian hiển thị chưa? | POS_UI-167 | | | | M |  |
-| 3 | UI Components & Controls | Tooltip đã được thêm cho các vị trí hiển thị「...」chưa? | POS_UI-167 | | | |  |  |
-| 4 | Input Fields & Form Design | Chức năng tìm kiếm theo 型番 đã có button hoặc giải pháp khác chưa? | POS_UI-167 | | | |  |  |
-| 5 | UI Components & Controls | Button「取消」đã đổi tên thành「在庫予約を取消」chưa? | POS_UI-167 | | | | M |  |
-| 6 | Cấu trúc Layout & Vị trí Thông tin | Button「在庫予約を取消」(戻る系) đã được đặt ở bên trái chưa? | POS_UI-167 | | | |  |  |
-| 7 | Hiển thị & Đồng bộ Thông tin | Thiết kế trường hợp không có tồn kho (在庫なし / No1) đã được tạo chưa? | POS_UI-167 | | | |  |  |
+| 1 | Cấu trúc Layout & Vị trí Thông tin | Đổi hiển thị 明細 từ 表形式 sang カード形式 (giống màn 売上) | POS_UI-167 | | | |  | Lý do: 型番 quá ngắn khi dùng bảng |
+| 2 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh layout để hiển thị tối đa 3 明細/giao dịch | POS_UI-167 | | | |  |  |
+| 3 | UI Components & Controls | Thêm tooltip cho các vị trí hiển thị「...」(văn bản bị cắt ngắn) | POS_UI-167 | | | |  |  |
+| 4 | Input Fields & Form Design | Thêm button (hoặc giải pháp khác) tìm kiếm theo 型番 | POS_UI-167 | | | |  |  |
+| 5 | UI Components & Controls | Đổi tên button「取消」→「在庫予約を取消」 | POS_UI-167 | | | |  |  |
+| 6 | Cấu trúc Layout & Vị trí Thông tin | Chuyển button「在庫予約を取消」sang bên trái (đây là button 戻る系) | POS_UI-167 | | | |  |  |
+| 7 | Hiển thị & Đồng bộ Thông tin | Thêm design trường hợp không có tồn kho (在庫なし — No1 display) | POS_UI-167 | | | |  |  |
 
 ---
 
 ## [POS_UI-169] C000186_在庫引当確認 / 予約取消確認
-- Màn hình: C000186
+- Màn hình: C000186_在庫引当確認 / 予約取消確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-169
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-169
 
-**Feedback khách:**
-> 。
-> ・本来伝えなければならない”DC在庫引当を行いますか。”のフォントサイズが小さく目立たない印象ですので、フォントサイズを上げて下さい。
+**Feedback khách (nguyên văn):**
+> ”DC在庫引当を行いますか。”のフォントサイズが小さく目立たない印象ですので、フォントサイズを上げて下さい。
 > また、タイトルと本文で同じ内容かと思いますのでタイトルを削除し、本文は「DC在庫の引当を行いますか。」としてください
 > ・選択肢は「いいえ」「はい」としてください。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | UI Components & Controls | Font size của「DC在庫の引当を行いますか。」đã đủ lớn và nổi bật chưa? | POS_UI-169 | | | |  | Hiện tại nhỏ, khó thấy |
-| 2 | Header & Navigation | Tiêu đề trùng nội dung body đã được xóa chưa? | POS_UI-169 | | | |  |  |
-| 3 | Hiển thị & Đồng bộ Thông tin | Body text đã sửa thành「DC在庫の引当を行いますか。」chưa? | POS_UI-169 | | | | M |  |
-| 4 | UI Components & Controls | Lựa chọn đã đổi thành「いいえ」「はい」chưa? | POS_UI-169 | | | | M |  |
+| 1 | Visual Style | Tăng font size câu「DC在庫の引当を行いますか。」cho to và nổi bật hơn | POS_UI-169 | | | |  | Hiện tại quá nhỏ, khó thấy |
+| 2 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề (title) vì trùng nội dung với body | POS_UI-169 | | | |  |  |
+| 3 | Hiển thị & Đồng bộ Thông tin | Sửa body thành「DC在庫の引当を行いますか。」 | POS_UI-169 | | | |  | Thêm chữ の: 在庫引当 → 在庫の引当 |
+| 4 | UI Components & Controls | Đổi 2 nút lựa chọn thành「いいえ」「はい」 | POS_UI-169 | | | |  | Thứ tự: いいえ trước, はい sau |
 
 ---
 
 ## [POS_UI-171] C000176_空き状況一覧表示
-- Màn hình: C000176
+- Màn hình: C000176_空き状況一覧表示
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-14
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-171
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-14
+- Link: https://siconnect.backlog.com/view/POS_UI-171
 
-**Feedback khách:**
-> 。
-> ・「センター店」表示エリアの"９１１２:試験配送センター"ですが、左側の表示エリアに"011-9112"（法人-店舗コード）が表示されているため、
+**Feedback khách (nguyên văn):**
+> "９１１２:試験配送センター"ですが、左側の表示エリアに"011-9112"（法人-店舗コード）が表示されているため、
 > 店舗名のみの表示でお願いします。
 > また、店舗名は最大全角16文字ですので、そちらを考慮した表示幅にしてください。
 > 表示するデータも最大文字数としてください。
@@ -452,23 +443,23 @@
 > ※店舗がWeb通販店であれば表示、でなければ非表示
 > ・取消ボタンは戻る系ですので、左側（戻るボタンの右側）に配置をお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Hiển thị & Đồng bộ Thông tin | Vùng「センター店」đã chỉ hiển thị 店舗名 (không kèm 法人-店舗コード đã có ở vùng trái) chưa? | POS_UI-171 | | | | M |  |
-| 2 | Cấu trúc Layout & Vị trí Thông tin | Độ rộng cột 店舗名 đã tính đến tối đa 全角16文字 chưa? Dữ liệu mẫu đã dùng chuỗi tối đa chưa? | POS_UI-171 | | | |  |  |
-| 3 | Screen Flow & Luồng Xử lý | Chức năng 前週/今週/翌週 đã phản ánh đúng spec chưa? (今週 → 前週 disabled; 翌週 xem được hơn 1 năm) | POS_UI-171 | | | |  |  |
-| 4 | Hiển thị & Đồng bộ Thông tin | Lỗi chính tả「アリア」đã sửa thành「エリア」chưa? | POS_UI-171 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Vùng「センター店」: chỉ hiển thị 店舗名, bỏ 法人-店舗コード (đã có ở vùng trái) | POS_UI-171 | | | |  |  |
+| 2 | Cấu trúc Layout & Vị trí Thông tin | Mở rộng cột 店舗名 để hiển thị tối đa 全角16文字; dùng dữ liệu mẫu tối đa | POS_UI-171 | | | |  |  |
+| 3 | Screen Flow & Luồng Xử lý | Sửa spec 前週/今週/翌週: disable「前週」khi đang ở 今週; cho phép「翌週」xem hơn 1 năm tới | POS_UI-171 | | | |  |  |
+| 4 | Hiển thị & Đồng bộ Thông tin | Sửa lỗi chính tả「アリア」→「エリア」 | POS_UI-171 | | | |  |  |
 
 ---
 
 ## [POS_UI-173] C000178_配送工事区分選択
-- Màn hình: C000178
+- Màn hình: C000178_配送工事区分選択
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-173
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-173
 
-**Feedback khách:**
-> 、配送情報変更_時間帯選択にデザインを合わせてください。
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 > ・工事重み（数値）を入力する際キーボードが表示されると思いますので、キーボードを表示させたデザインの作成もお願いします。
 > ・時間帯の件数が０件の場合は0/10の表記で、ボタンの状態は非活性となり押せない挙動になります。
@@ -481,71 +472,64 @@
 > 表示コメントは全角５０文字×２行になります。
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | UI Components & Controls | Thiết kế button 時間帯 đã được đồng bộ theo chuẩn màn 配送情報変更_時間帯選択 chưa? | POS_UI-173 | | | | M |  |
-| 2 | Input Fields & Form Design | Thiết kế màn hình khi keyboard hiển thị (lúc nhập 工事重み) đã được tạo chưa? | POS_UI-173 | | | |  |  |
-| 3 | UI Components & Controls | Khi 時間帯 = 0件, đã hiển thị「0/10」và button 非活性 chưa? | POS_UI-173 | | | |  |  |
-| 4 | Header & Navigation | Guide message đã được cập nhật phù hợp với màn này (không dùng guide của 予約担当者入力) chưa? | POS_UI-173 | | | |  |  |
-| 5 | Hiển thị & Đồng bộ Thông tin | Vùng「エリア」đã hiển thị tên khu vực giao hàng/công trình (水戸, いわき...) thay vì 店舗コード chưa? | POS_UI-173 | | | | M |  |
+| 1 | UI Components & Controls | Đồng bộ thiết kế button 時間帯 theo chuẩn màn 配送情報変更_時間帯選択 | POS_UI-173 | | | |  |  |
+| 2 | Input Fields & Form Design | Thêm design màn hình khi keyboard hiển thị (lúc nhập 工事重み) | POS_UI-173 | | | |  |  |
+| 3 | UI Components & Controls | Thêm design khi 時間帯 = 0件: hiển thị「0/10」, button ở trạng thái 非活性 | POS_UI-173 | | | |  |  |
+| 4 | Hiển thị & Đồng bộ Thông tin | Cập nhật guide message phù hợp với nội dung màn này | POS_UI-173 | | | |  | Guide hiện dùng của 予約担当者入力 — sai màn |
+| 5 | Hiển thị & Đồng bộ Thông tin | Đổi vùng「エリア」hiển thị tên khu vực giao hàng/công trình (水戸, いわき...) thay vì 店舗コード/店舗名 | POS_UI-173 | | | |  |  |
 
 ---
 
 ## [POS_UI-174] C000180_指定方法選択
-- Màn hình: C000180
+- Màn hình: C000180_指定方法選択
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-174
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-174
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > "指定方法"という単語が２回出てくるため、過剰に思います。※一部検索方法になっている
 > ですので、タイトル：指定方法を選択は残して置き、「～を選択してください」のガイドは削除してください。
 > 緑背景の検索方法も削除でお願いします。
 > また、閉じるボタンと検索方法のボタンの幅が同じため、ぱっと見で３択に見えます。
 > 閉じるボタンのサイズは他画面に合わせてください。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Guide「～を選択してください」và vùng xanh lá「検索方法」đã được xóa chưa? (từ「指定方法」đã có trong tiêu đề rồi) | POS_UI-174 | | | |  |  |
-| 2 | UI Components & Controls | Kích thước button「閉じる」đã được thu nhỏ khớp với các màn khác chưa? | POS_UI-174 | | | |  | Hiện cùng size với button chính → trông như 3 lựa chọn |
+| 1 | Hiển thị & Đồng bộ Thông tin | Xóa guide「～を選択してください」và vùng xanh lá「検索方法」(từ「指定方法」đã có trong tiêu đề) | POS_UI-174 | | | |  |  |
+| 2 | UI Components & Controls | Thu nhỏ kích thước button「閉じる」cho khớp với màn khác | POS_UI-174 | | | |  | Hiện cùng size với button chính → trông như 3 lựa chọn |
 
 ---
 
 ## [POS_UI-175] B0401エリア絞込
 - Màn hình: B0401エリア絞込
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-175
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-175
 
-**Feedback khách:**
-> 。
-> ・エリア名称は最大で全角３０文字なので、その文字数がゆとりある形で入る程度の列幅で問題ありません。
-> そのうえで、サブフォームのサイズ調整をお願いします。
-> ・同じデータが表示されることは想定していないため、表示データは各Noバラバラにしてください。
-> ・スクロールバーが明細に被らないよう調整してください。
-> ・ボタン名は「進む」ではなく、「確定」にしてください。
-> また、申し訳ありませんが「特定エリア表示」ボタンは削除でお願いします。
-> 本メニューでは、現在使用されていない機能のようです。
-
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Cấu trúc Layout & Vị trí Thông tin | エリアコード đã được căn giữa (中央揃え) chưa? | POS_UI-175 | | | | M | Chuẩn: code → center |
-| 2 | Cấu trúc Layout & Vị trí Thông tin | Độ rộng cột エリア名称 đã đủ cho tối đa 全角30文字 với margin thoải mái chưa? | POS_UI-175 | | | |  |  |
-| 3 | Cấu trúc Layout & Vị trí Thông tin | Kích thước subform đã được điều chỉnh sau khi sửa độ rộng cột chưa? | POS_UI-175 | | | |  |  |
-| 4 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng đã có nội dung khác nhau chưa? | POS_UI-175 | | | |  |  |
-| 5 | Cấu trúc Layout & Vị trí Thông tin | Scrollbar đã không đè lên vùng 明細 chưa? | POS_UI-175 | | | |  |  |
-| 6 | UI Components & Controls | Button「進む」đã đổi thành「確定」chưa? | POS_UI-175 | | | | M |  |
-| 7 | UI Components & Controls | Button「特定エリア表示」đã được xóa chưa? (chức năng không còn dùng) | POS_UI-175 | | | |  |  |
+| 1 | Data Format | Căn giữa (中央揃え) cột エリアコード | POS_UI-175 | | | |  | Chuẩn: code → căn giữa |
+| 2 | Cấu trúc Layout & Vị trí Thông tin | Mở rộng cột エリア名称 đủ cho tối đa 全角30文字 với margin thoải mái | POS_UI-175 | | | |  |  |
+| 3 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh kích thước subform sau khi sửa độ rộng cột | POS_UI-175 | | | |  |  |
+| 4 | Hiển thị & Đồng bộ Thông tin | Thay thế dữ liệu mẫu để mỗi dòng có nội dung khác nhau | POS_UI-175 | | | |  |  |
+| 5 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh scrollbar không đè lên vùng 明細 | POS_UI-175 | | | |  |  |
+| 6 | UI Components & Controls | Đổi tên button「進む」→「確定」 | POS_UI-175 | | | |  |  |
+| 7 | UI Components & Controls | Xóa button「特定エリア表示」(chức năng không còn dùng) | POS_UI-175 | | | |  |  |
 
 ---
 
 ## [POS_UI-176] C000181_JISコード入力
-- Màn hình: C000181
+- Màn hình: C000181_JISコード入力
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-176
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-176
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > ・JISコード入力のテキストボックスには検索後、何が表示されますでしょうか？
 > →JISコードのみでしょうか？それとも、都道府県＋市まで表示されますでしょうか？
 > →未入力状態だけでなく、入力済みの状態のデザインの作成をお願いします。
@@ -559,29 +543,30 @@
 > また、「印刷ボタン」を青いボタンにしてください。
 > ・「宅配不可エリア」ボタンを押した後の画面デザイン作成をお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Input Fields & Form Design | Thiết kế trạng thái chưa nhập (未入力) đã có chưa? | POS_UI-176 | | | | M |  |
-| 2 | Input Fields & Form Design | Thiết kế trạng thái đã nhập (入力済み) với địa chỉ「都道府県＋市」đã có chưa? | POS_UI-176 | | | | M |  |
-| 3 | Cấu trúc Layout & Vị trí Thông tin | JISコード và 配送頻度 đã được căn giữa chưa? | POS_UI-176 | | | | M |  |
-| 4 | Hiển thị & Đồng bộ Thông tin | Lỗi chữ Hán trong「頻度」đã sửa đúng chưa? | POS_UI-176 | | | | M |  |
-| 5 | Hiển thị & Đồng bộ Thông tin | Địa chỉ đã hiển thị「都道府県＋市」thay vì「ミトミツクニ」chưa? | POS_UI-176 | | | | M |  |
-| 6 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng đã có nội dung khác nhau chưa? | POS_UI-176 | | | |  |  |
-| 7 | Cấu trúc Layout & Vị trí Thông tin | Scrollbar đã không đè lên vùng 明細 chưa? | POS_UI-176 | | | |  |  |
-| 8 | UI Components & Controls | Button「確定」đã được xóa chưa? | POS_UI-176 | | | |  |  |
-| 9 | UI Components & Controls | Button「印刷」đã đổi sang màu xanh chưa? | POS_UI-176 | | | |  |  |
-| 10 | Screen Flow & Luồng Xử lý | Màn hình sau khi nhấn「宅配不可エリア」đã được thiết kế chưa? | POS_UI-176 | | | |  |  |
+| 1 | Input Fields & Form Design | Thêm design trạng thái chưa nhập (未入力) | POS_UI-176 | | | |  |  |
+| 2 | Input Fields & Form Design | Thêm design trạng thái đã nhập (入力済み) với địa chỉ「都道府県＋市」 | POS_UI-176 | | | |  |  |
+| 3 | Data Format | Căn giữa JISコード và 配送頻度 | POS_UI-176 | | | |  |  |
+| 4 | Hiển thị & Đồng bộ Thông tin | Sửa lỗi chữ Hán trong「頻度」 | POS_UI-176 | | | |  | Xem lại chữ 頻 trong từ 頻度 |
+| 5 | Hiển thị & Đồng bộ Thông tin | Đổi địa chỉ mẫu「ミトミツクニ」→「都道府県＋市」(vd: 茨城県水戸市) | POS_UI-176 | | | |  |  |
+| 6 | Hiển thị & Đồng bộ Thông tin | Thay thế dữ liệu mẫu để mỗi dòng có nội dung khác nhau | POS_UI-176 | | | |  |  |
+| 7 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh scrollbar không đè lên vùng 明細 | POS_UI-176 | | | |  |  |
+| 8 | UI Components & Controls | Xóa button「確定」(không cần thiết ở màn này) | POS_UI-176 | | | |  |  |
+| 9 | UI Components & Controls | Đổi button「印刷」sang màu xanh (青いボタン) | POS_UI-176 | | | |  |  |
+| 10 | Screen Flow & Luồng Xử lý | Thêm design màn hình sau khi nhấn button「宅配不可エリア」 | POS_UI-176 | | | |  |  |
 
 ---
 
 ## [POS_UI-178] C000182_店舗情報入力
-- Màn hình: C000182
+- Màn hình: C000182_店舗情報入力
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-13
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-178
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-13
+- Link: https://siconnect.backlog.com/view/POS_UI-178
 
-**Feedback khách:**
-> 、店舗検索のテキストボックスには検索後、何が表示されますでしょうか？
+**Feedback khách (nguyên văn):**
+> ？
 > →法人、店舗コードのみでしょうか？それとも、法人コードと法人名、店舗コードと店舗名でしょうか？
 > →未入力状態だけでなく、入力済みの状態のデザインの作成をお願いします。
 > ・JISコード、配送頻度は中央揃えにしてください。
@@ -594,30 +579,30 @@
 > また、「印刷ボタン」を青いボタンにしてください。
 > ・「宅配不可エリア」ボタンを押した後の画面デザイン作成をお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Input Fields & Form Design | Thiết kế trạng thái chưa nhập (未入力) đã có chưa? | POS_UI-178 | | | | M |  |
-| 2 | Input Fields & Form Design | Thiết kế trạng thái đã nhập (入力済み) với địa chỉ「都道府県＋市」đã có chưa? | POS_UI-178 | | | | M |  |
-| 3 | Cấu trúc Layout & Vị trí Thông tin | JISコード và 配送頻度 đã được căn giữa chưa? | POS_UI-178 | | | | M |  |
-| 4 | Hiển thị & Đồng bộ Thông tin | Lỗi chữ Hán trong「頻度」đã sửa đúng chưa? | POS_UI-178 | | | | M |  |
-| 5 | Hiển thị & Đồng bộ Thông tin | Địa chỉ đã hiển thị「都道府県＋市」thay vì「ミトミツクニ」chưa? | POS_UI-178 | | | | M |  |
-| 6 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng đã có nội dung khác nhau chưa? | POS_UI-178 | | | |  |  |
-| 7 | Cấu trúc Layout & Vị trí Thông tin | Scrollbar đã không đè lên vùng 明細 chưa? | POS_UI-178 | | | |  |  |
-| 8 | UI Components & Controls | Button「確定」đã được xóa chưa? | POS_UI-178 | | | |  |  |
-| 9 | UI Components & Controls | Button「印刷」đã đổi sang màu xanh chưa? | POS_UI-178 | | | |  |  |
-| 10 | Screen Flow & Luồng Xử lý | Màn hình sau khi nhấn「宅配不可エリア」đã được thiết kế chưa? | POS_UI-178 | | | |  |  |
+| 1 | Input Fields & Form Design | Thêm design trạng thái chưa nhập (未入力) cho ô tìm kiếm 法人/店舗 | POS_UI-178 | | | |  |  |
+| 2 | Input Fields & Form Design | Thêm design trạng thái đã nhập (入力済み) với địa chỉ「都道府県＋市」 | POS_UI-178 | | | |  |  |
+| 3 | Data Format | Căn giữa JISコード và 配送頻度 | POS_UI-178 | | | |  |  |
+| 4 | Hiển thị & Đồng bộ Thông tin | Sửa lỗi chữ Hán trong「頻度」 | POS_UI-178 | | | |  |  |
+| 5 | Hiển thị & Đồng bộ Thông tin | Đổi địa chỉ mẫu「ミトミツクニ」→「都道府県＋市」 | POS_UI-178 | | | |  |  |
+| 6 | Hiển thị & Đồng bộ Thông tin | Thay thế dữ liệu mẫu để mỗi dòng có nội dung khác nhau | POS_UI-178 | | | |  |  |
+| 7 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh scrollbar không đè lên vùng 明細 | POS_UI-178 | | | |  |  |
+| 8 | UI Components & Controls | Xóa button「確定」(màn này là「配送工事エリア担当店舗照会」— không cần button đó) | POS_UI-178 | | | |  |  |
+| 9 | UI Components & Controls | Đổi button「印刷」sang màu xanh | POS_UI-178 | | | |  |  |
+| 10 | Screen Flow & Luồng Xử lý | Thêm design màn hình sau khi nhấn button「宅配不可エリア」 | POS_UI-178 | | | |  |  |
 
 ---
 
 ## [POS_UI-180] C000123_検索方法選択
-- Màn hình: C000123
+- Màn hình: C000123_検索方法選択
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-180
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-180
 
-**Feedback khách:**
-> 。
-> ・タイトルは「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・担当者画面に表示ではなく、白背景に選択画面を表示するデザインにできますでしょうか。
 > 簡単なイメージになります。
 > *(ảnh đính kèm)*
@@ -628,45 +613,45 @@
 > ・閉じるボタンと検索方法のボタンの幅が同じため、ぱっと見で３択に見えます。
 > 閉じるボタンのサイズは他画面に合わせてください。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-180 | | | | M |  |
-| 2 | Input Fields & Form Design | Popup đã dùng nền trắng (白背景), không đè lên màn 担当者 chưa? | POS_UI-180 | | | |  |  |
-| 3 | Header & Navigation | Từ「検索方法」đã chỉ còn 1 lần; guide và vùng xanh trùng đã xóa chưa? | POS_UI-180 | | | |  |  |
-| 4 | UI Components & Controls | Vùng xanh lá đã được sửa thành text「検索方法選択」chưa? | POS_UI-180 | | | |  |  |
-| 5 | UI Components & Controls | Nút「指定なし」đã đổi thành「指定せずに検索」chưa? | POS_UI-180 | | | |  |  |
-| 6 | UI Components & Controls | Kích thước button「閉じる」đã được thu nhỏ khớp màn khác chưa? | POS_UI-180 | | | |  | Hiện trông như 3 lựa chọn |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-180 | | | |  |  |
+| 2 | Visual Style | Đổi background popup sang nền trắng (白背景), không đè lên màn 担当者 | POS_UI-180 | | | |  |  |
+| 3 | Hiển thị & Đồng bộ Thông tin | Xóa guide「～を選択してください」và vùng xanh lá trùng nội dung | POS_UI-180 | | | |  |  |
+| 4 | Hiển thị & Đồng bộ Thông tin | Sửa vùng xanh lá thành text「検索方法選択」 | POS_UI-180 | | | |  |  |
+| 5 | UI Components & Controls | Đổi nút「指定なし」→「指定せずに検索」 | POS_UI-180 | | | |  |  |
+| 6 | UI Components & Controls | Thu nhỏ kích thước button「閉じる」cho khớp với màn khác | POS_UI-180 | | | |  | Hiện cùng size với button chính → trông như 3 lựa chọn |
 
 ---
 
 ## [POS_UI-181] C000125_端末見積書検索サブフォーム
-- Màn hình: C000125
+- Màn hình: C000125_端末見積書検索サブフォーム
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-181
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-181
 
-**Feedback khách:**
-> 「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-181 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment POS_UI-156 đã được áp dụng chưa? | POS_UI-181 | | | |  | Cần mở POS_UI-156 xem comment |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-181 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment POS_UI-156 | POS_UI-181 | | | |  | Mở POS_UI-156 xem comment |
 
 ---
 
 ## [POS_UI-182] C000124_未承認一覧表示
-- Màn hình: C000124
+- Màn hình: C000124_未承認一覧表示
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-182
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-182
 
-**Feedback khách:**
-> 。
-> ・本チケットのタイトルを「C000124_未印刷一覧表示」に修正をお願いします。
-> ・タイトルは「見積書未印刷一覧（配送端末）」に修正
+**Feedback khách (nguyên văn):**
+> （配送端末）」に修正
 > ・選択列のヘッダーはチェックボックスコントロールを置かずに、文言"選択"にする
 > ・以下画像赤枠の機能ボタンは引き継ぎたいので、ボタンを追加 または 別の手段で機能が実行できるようなデザインに修正
 > *(ảnh đính kèm)*
@@ -678,271 +663,272 @@
 > → 他画面についても同様に対応
 > ・現行では1ページ18明細表示なので、可能な限り18明細に近い明細数を表示できるよう上下余白を調整
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-182 | | | | M |  |
-| 2 | UI Components & Controls | Header cột '選択' đã dùng text「選択」thay vì checkbox control chưa? | POS_UI-182 | | | |  |  |
-| 3 | UI Components & Controls | Các button chức năng (vùng đỏ trong ảnh) đã được thêm lại hoặc có giải pháp thay thế chưa? | POS_UI-182 | | | |  |  |
-| 4 | UI Components & Controls | Button xanh đã được đặt tên「印刷」chưa? | POS_UI-182 | | | |  | Menu in 見積書 đã duyệt |
-| 5 | Cấu trúc Layout & Vị trí Thông tin | Scrollbar đã không đè lên vùng 金額欄 chưa? | POS_UI-182 | | | |  |  |
-| 6 | Hiển thị & Đồng bộ Thông tin | Dữ liệu mẫu mỗi dòng đã có nội dung khác nhau chưa? | POS_UI-182 | | | |  |  |
-| 7 | UI Components & Controls | Tooltip đã được thêm cho các vị trí hiển thị「...」chưa? | POS_UI-182 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-182 | | | |  |  |
+| 2 | UI Components & Controls | Đổi header cột '選択' từ checkbox control → text label「選択」 | POS_UI-182 | | | |  |  |
+| 3 | UI Components & Controls | Thêm lại các button chức năng (vùng đỏ trong ảnh) hoặc giải pháp thay thế | POS_UI-182 | | | |  |  |
+| 4 | UI Components & Controls | Đặt tên button xanh là「印刷」 | POS_UI-182 | | | |  | Menu in 見積書 đã duyệt |
+| 5 | Cấu trúc Layout & Vị trí Thông tin | Điều chỉnh scrollbar không đè lên vùng 金額欄 | POS_UI-182 | | | |  |  |
+| 6 | Hiển thị & Đồng bộ Thông tin | Thay thế dữ liệu mẫu để mỗi dòng có nội dung khác nhau | POS_UI-182 | | | |  |  |
+| 7 | UI Components & Controls | Thêm tooltip cho các vị trí hiển thị「...」 | POS_UI-182 | | | |  |  |
 
 ---
 
 ## [POS_UI-183] C000127_詳細
-- Màn hình: C000127
+- Màn hình: C000127_詳細
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-183
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-183
 
-**Feedback khách:**
-> 、その旨を表示しています。
-> この仕様は引き継ぎたいため、デザインの追加をお願いします。
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-183 | | | | M |  |
-| 2 | Hiển thị & Đồng bộ Thông tin | Trường hợp không phải hội viên あんしんパスポート đã được thêm thông báo tương ứng chưa? | POS_UI-183 | | | | M | Xem ảnh đính kèm |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-183 | | | |  |  |
+| 2 | Hiển thị & Đồng bộ Thông tin | Thêm thông báo cho trường hợp không phải hội viên あんしんパスポート | POS_UI-183 | | | |  | Xem ảnh đính kèm |
 
 ---
 
 ## [POS_UI-184] C000126_印刷確認
-- Màn hình: C000126
+- Màn hình: C000126_印刷確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-184
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-184
 
-**Feedback khách:**
-> 「お客様控えのみ」「会員番号記載」のみでは直感的に分かりにくいため、
-> 「お客様控えのみを印刷」「見積書に会員番号を記載」に文言変更をお願いします。
-> ・「C000124_未印刷一覧表示」で印刷をする場合、現行では以下のデザイン、流れになります。
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 > ↓
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-184 | | | | M |  |
-| 2 | UI Components & Controls | Text button đã đổi thành「お客様控えのみを印刷」chưa? | POS_UI-184 | | | | M | Từ cũ ngắn, không trực quan |
-| 3 | UI Components & Controls | Text button đã đổi thành「見積書に会員番号を記載」chưa? | POS_UI-184 | | | | M |  |
-| 4 | Screen Flow & Luồng Xử lý | Flow in từ màn「未印刷一覧表示」đã phản ánh đúng flow hiện hành (xem ảnh đính kèm) chưa? | POS_UI-184 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-184 | | | |  |  |
+| 2 | UI Components & Controls | Đổi text button「お客様控えのみ」→「お客様控えのみを印刷」 | POS_UI-184 | | | |  | Thêm「を印刷」vào cuối |
+| 3 | UI Components & Controls | Đổi text button「会員番号記載」→「見積書に会員番号を記載」 | POS_UI-184 | | | |  | Thêm「見積書に」vào đầu, thêm「を記載」vào cuối |
+| 4 | Screen Flow & Luồng Xử lý | Phản ánh đúng flow in hiện hành từ màn「未印刷一覧表示」(xem ảnh đính kèm) | POS_UI-184 | | | |  |  |
 
 ---
 
 ## [POS_UI-185] C000128_別紙内容確認
-- Màn hình: C000128
+- Màn hình: C000128_別紙内容確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-185
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-185
 
-**Feedback khách:**
-> 「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-185 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment trong ticket đã được áp dụng chưa? | POS_UI-185 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-185 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment trong ticket | POS_UI-185 | | | |  |  |
 
 ---
 
 ## [POS_UI-186] C000129_次回訪問予定
-- Màn hình: C000129
+- Màn hình: C000129_次回訪問予定
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-186
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-186
 
-**Feedback khách:**
-> 「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-186 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment trong ticket đã được áp dụng chưa? | POS_UI-186 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-186 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment trong ticket | POS_UI-186 | | | |  |  |
 
 ---
 
 ## [POS_UI-187] C000130_見積内容
-- Màn hình: C000130
+- Màn hình: C000130_見積内容
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-187
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-187
 
-**Feedback khách:**
-> 「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-187 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment trong ticket đã được áp dụng chưa? | POS_UI-187 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-187 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment trong ticket | POS_UI-187 | | | |  |  |
 
 ---
 
 ## [POS_UI-188] C000131_見積結果
-- Màn hình: C000131
+- Màn hình: C000131_見積結果
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-188
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-188
 
-**Feedback khách:**
-> 「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-188 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment trong ticket đã được áp dụng chưa? | POS_UI-188 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-188 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment trong ticket | POS_UI-188 | | | |  |  |
 
 ---
 
 ## [POS_UI-190] C000133_店舗への連絡
-- Màn hình: C000133
+- Màn hình: C000133_店舗への連絡
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-190
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-190
 
-**Feedback khách:**
-> 「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-190 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment trong ticket đã được áp dụng chưa? | POS_UI-190 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-190 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment trong ticket | POS_UI-190 | | | |  |  |
 
 ---
 
 ## [POS_UI-191] C000134_コメント
-- Màn hình: C000134
+- Màn hình: C000134_コメント
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-191
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-191
 
-**Feedback khách:**
-> 「見積書未印刷一覧（配送端末）」でお願いします。
+**Feedback khách (nguyên văn):**
+> （配送端末）」でお願いします。
 > ・以下コメントの対応をお願いします。
 > *(link)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề đã đổi thành「見積書未印刷一覧（配送端末）」chưa? | POS_UI-191 | | | | M |  |
-| 2 | Tab & Thông tin Chi tiết / Consistency | Các sửa đổi theo comment POS_UI-166 đã được áp dụng chưa? | POS_UI-191 | | | |  |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Đổi tiêu đề màn thành「見積書未印刷一覧（配送端末）」 | POS_UI-191 | | | |  |  |
+| 2 | Tab & Thông tin Chi tiết / Consistency | Áp dụng các sửa đổi theo comment POS_UI-166 | POS_UI-191 | | | |  |  |
 
 ---
 
 ## [POS_UI-194] 返品エラー通知
 - Màn hình: 返品エラー通知
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-194
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-194
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — cần mở Backlog xem comment gốc)* | POS_UI-194 | | | |  |  |
+| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — mở Backlog xem comment gốc trước khi sửa)* | POS_UI-194 | | | |  |  |
 
 ---
 
 ## [POS_UI-195] 元伝と新黒決済確認
 - Màn hình: 元伝と新黒決済確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-195
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-195
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 > ・お買上げ総数、総額については、最新のデザインに反映をお願いします。（画像赤枠）
 > ・未決済金額について、デザインに反映をお願いします。（画像青枠）
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Hiển thị & Đồng bộ Thông tin | お買上げ総数・総額 đã được cập nhật theo design mới nhất chưa? (xem ảnh vùng đỏ) | POS_UI-195 | | | | M |  |
-| 2 | Hiển thị & Đồng bộ Thông tin | 未決済金額 đã được thêm vào design chưa? (xem ảnh vùng xanh) | POS_UI-195 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Cập nhật thiết kế お買上げ総数・総額 theo design mới nhất (xem ảnh vùng đỏ) | POS_UI-195 | | | |  |  |
+| 2 | Hiển thị & Đồng bộ Thông tin | Thêm 未決済金額 vào design (xem ảnh vùng xanh) | POS_UI-195 | | | |  |  |
 
 ---
 
 ## [POS_UI-196] C000058_決済種別変更の確認
-- Màn hình: C000058
+- Màn hình: C000058_決済種別変更の確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-196
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-196
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — cần mở Backlog xem comment gốc)* | POS_UI-196 | | | |  |  |
+| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — mở Backlog xem comment gốc trước khi sửa)* | POS_UI-196 | | | |  |  |
 
 ---
 
 ## [POS_UI-197] 元伝カード決済引き継ぎの確認
 - Màn hình: 元伝カード決済引き継ぎの確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-197
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-197
 
-**Feedback khách:**
-> 「元伝カード決済」のタイトルは削除でお願いします。
-
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề「元伝カード決済」ở phía trên màn hình đã được xóa chưa? | POS_UI-197 | | | | M |  |
+| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「元伝カード決済」đang hiển thị ở phía trên màn hình | POS_UI-197 | | | |  |  |
 
 ---
 
 ## [POS_UI-198] 元伝決済時カード持ち確認
 - Màn hình: 元伝決済時カード持ち確認
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-198
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-198
 
-**Feedback khách:**
-> 「元伝決済時カード」のタイトルは削除でお願いします。
-> ・「元伝決済時カード」を選択後は、自動で画面遷移する想定でしょうか。
-> 確定ボタンのようなものがないため確認です。
-
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Header & Navigation | Tiêu đề「元伝決済時カード」ở phía trên màn hình đã được xóa chưa? | POS_UI-198 | | | | M |  |
-| 2 | Screen Flow & Luồng Xử lý | Spec chuyển màn sau khi chọn (tự động hay cần button?) đã được xác nhận với khách trước khi thiết kế chưa? | POS_UI-198 | | | |  | Hiện không có button xác nhận — cần hỏi khách |
+| 1 | Hiển thị & Đồng bộ Thông tin | Xóa tiêu đề「元伝決済時カード」đang hiển thị ở phía trên màn hình | POS_UI-198 | | | |  |  |
+| 2 | Screen Flow & Luồng Xử lý | Xác nhận với khách: sau khi chọn「元伝決済時カード」có chuyển màn tự động không, hay cần button xác nhận | POS_UI-198 | | | |  | Hiện không có button — cần confirm spec trước khi sửa |
 
 ---
 
 ## [POS_UI-201] C000047_客先配送予定日
-- Màn hình: C000047
+- Màn hình: C000047_客先配送予定日
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-12
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-201
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-12
+- Link: https://siconnect.backlog.com/view/POS_UI-201
 
-**Feedback khách:**
-> 。
+**Feedback khách (nguyên văn):**
 > *(ảnh đính kèm)*
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | UI Components & Controls | Thiết kế button 時間帯 đã được đồng bộ theo chuẩn màn 配送情報変更_時間帯選択 chưa? | POS_UI-201 | | | | M |  |
+| 1 | UI Components & Controls | Đồng bộ thiết kế button 時間帯 theo chuẩn màn 配送情報変更_時間帯選択 | POS_UI-201 | | | |  |  |
 
 ---
 
 ## [POS_UI-203] C000183_空き状況一覧表示
-- Màn hình: C000183
+- Màn hình: C000183_空き状況一覧表示
 - Người phụ trách: VTI アイン
-- Ngày cập nhật: 2026-05-08
-- Link Backlog: https://siconnect.backlog.com/view/POS_UI-203
+- Status: 30_差戻／修正依頼
+- Ngày: 2026-05-08
+- Link: https://siconnect.backlog.com/view/POS_UI-203
 
-**Feedback khách:**
+**Feedback khách (nguyên văn):**
 > *(link)* と重複しているようです。（センター店名の表示がありません）
 > 不要なチケットである可能性がありますので、ご確認をお願いします。
 
-| # | Nhóm | Check Item | 出典 | Round 1 | Round 2 | Round 3 | Mandatory | Remark |
+| # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Screen Flow & Luồng Xử lý | Ticket này đã được xác nhận là trùng với POS_UI-171 chưa? Nếu trùng → đóng ticket. | POS_UI-203 | | | |  | Khách đã comment: 重複している可能性あり |
+| 1 | Screen Flow & Luồng Xử lý | Xác nhận với PM ticket này có trùng với POS_UI-171 không; nếu trùng → đóng ticket | POS_UI-203 | | | |  | Khách đã comment: 重複している可能性あり |
 
 ---
