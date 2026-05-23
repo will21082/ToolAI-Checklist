@@ -75,7 +75,7 @@ Mỗi ý độc lập = một dòng. Các cột:
 | `Remark` | Ghi chú điểm dễ sót (ký tự thay đổi, thứ tự, lưu ý đặc biệt) |
 
 ### Bước 5 — Xuất output THEO TỪNG TICKET
-Xuất MỘT file Markdown `checklist_design_POS_UI_YYYYMMDD.md`. Mỗi ticket một phần:
+Xuất MỘT file Markdown vào folder `output/` trong thư mục dự án, đặt tên `Checklist_<loại>_<assignee>_YYYY-MM-DD.md`. Mỗi ticket một phần:
 
     ## [issueKey] Tiêu đề ticket
     - Màn hình: <screen>
