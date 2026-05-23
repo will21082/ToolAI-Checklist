@@ -4,7 +4,7 @@
 | | |
 |---|---|
 | Tổng tickets | 45 |
-| Tổng việc cần sửa | 133 |
+| Tổng việc cần sửa | 140 |
 | Ngày | 2026-05-24 |
 
 **Cách dùng:** Sửa xong từng dòng → điền `OK` / `NOK` / `N/A` vào Round 1 → khi tất cả OK → upload → đổi status Backlog `20_確認待ち`.
@@ -81,9 +81,21 @@
 - Ngày: 2026-05-18
 - Link: https://siconnect.backlog.com/view/POS_UI-139
 
+**Feedback khách (nguyên văn):**
+> SMJ 河野 (2026-05-07): ①明細を表示する表はソート不可としたいです。②「・・・」ボタンの追加をお願いします。
+> SMJ 河野 (2026-05-11): 現在のテーブル形式からカード形式のレイアウトに変更いただきたいです。類似メニューに関しては、デザインを統一した意図があります。
+> SMJ 伊藤 (2026-05-15): 画面全体を通して売上画面のレイアウトを参考に作成いただきたいです。売上画面右下には「定型文」「備考」を入力できるボタンを配置したいです。なお、見積書メニューにある「商品状態」は不要です。入力時にポップアップを表示し、備考入力や定型文選択ができる画面を表示したいです。明細画面には入力した「定型文」「備考」を表示したいです。
+
 | # | Nhóm | Việc cần sửa | 出典 | Round 1 | Round 2 | Round 3 | M | Remark |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tab & Thông tin Chi tiết / Consistency | *(Chưa có comment — mở Backlog xem comment gốc trước khi sửa)* | POS_UI-139 | | | |  |  |
+| 1 | UI Components & Controls | Đổi layout toàn màn từ table format sang card format (đồng bộ với các menu tương tự) | 734560706 | | | |  | Tham chiếu: 売上明細画面 |
+| 2 | UI Components & Controls | Bỏ tính năng sort trên bảng 明細 (ソート不可) | 732520561 | | | |  | Tham chiếu: 売上明細画面 |
+| 3 | UI Components & Controls | Thêm nút「・・・」để chọn phương thức tìm kiếm khác (型番検索 v.v.) | 732520561 | | | |  | Xem POS_UI-65#comment-732467700 để biết spec chi tiết |
+| 4 | Cấu trúc Layout & Vị trí Thông tin | Thiết kế lại toàn màn theo layout của 売上画面 làm chuẩn | 737425839 | | | |  | Dùng 売上画面 làm base, không dùng 見積書画面 |
+| 5 | UI Components & Controls | Đặt 2 nút「定型文」「備考」ở góc dưới bên phải màn hình | 737425839 | | | |  | |
+| 6 | Hiển thị & Đồng bộ Thông tin | Xóa menu「商品状態」(không cần thiết ở màn này) | 737425839 | | | |  | Chỉ có trong 見積書メニュー, không dùng ở đây |
+| 7 | Screen Flow & Luồng Xử lý | Thêm popup nhập「備考」và chọn「定型文」khi nhấn nút tương ứng | 737425839 | | | |  | Xem ảnh đính kèm trong comment 2026-05-15 |
+| 8 | Hiển thị & Đồng bộ Thông tin | Hiển thị「定型文」và「備考」đã nhập vào màn 明細 | 737425839 | | | |  | |
 
 ---
 
