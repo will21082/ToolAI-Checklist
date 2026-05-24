@@ -164,23 +164,12 @@ python3 -m venv .venv
 
 ### 4. Chạy lần đầu (mở trình duyệt để xác thực)
 
-Trình duyệt tự mở → đăng nhập Google → cấp quyền → đóng lại.
-File `token.json` được tạo tự động.
-
-**Nếu muốn dùng file Google Sheets đã có sẵn** (ví dụ file tạo từ máy nhà):
-
-```bash
-# Lấy ID từ link Sheets: https://docs.google.com/spreadsheets/d/<ID>/edit
-.venv/bin/python3 scripts/run_all.py --spreadsheet-id <ID>
-```
-
-Script tự lưu ID vào `.state/spreadsheet.json` — các lần sau chạy bình thường, không cần truyền lại.
-
-**Nếu muốn tạo file Sheets mới:**
-
 ```bash
 .venv/bin/python3 scripts/run_all.py
 ```
+
+Trình duyệt tự mở → đăng nhập Google → cấp quyền → đóng lại.
+File `token.json` được tạo tự động. Spreadsheet ID đã được lưu sẵn trong `.state/spreadsheet.json` — script tự dùng đúng file Sheets, không cần config thêm gì.
 
 ---
 
