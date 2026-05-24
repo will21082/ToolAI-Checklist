@@ -2,8 +2,9 @@
 credentials.json
 token.json
 
-# ── Local state (spreadsheet ID, processed comments cache) ────────────────────
-.state/
+# ── Local state (processed comments cache — ephemeral) ────────────────────────
+.state/processed_comments.json
+# spreadsheet.json được commit để dùng chung trên các máy
 
 # ── Python virtualenv ─────────────────────────────────────────────────────────
 .venv/
