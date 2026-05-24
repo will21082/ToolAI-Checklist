@@ -1,21 +1,31 @@
-# Sensitive / local settings — never commit
+# ── Google OAuth credentials — NEVER commit ───────────────────────────────────
+credentials.json
+token.json
+
+# ── Local state (spreadsheet ID, processed comments cache) ────────────────────
+.state/
+
+# ── Python virtualenv ─────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+
+# ── Generated CSV output (source of truth is the .md files) ───────────────────
+output/*.csv
+
+# ── Sensitive / local settings ────────────────────────────────────────────────
 .claude/settings.local.json
 .env
 .env.*
 !.env.example
 
-# Temp files
-.tmp/
-*.tmp
-*.log
-
-# OS
+# ── OS / Editor ───────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# Editor
 .vscode/
 .idea/
 *.swp
 *~
+*.tmp
+*.log
