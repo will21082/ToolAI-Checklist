@@ -4,6 +4,48 @@ Tool tự động hóa toàn bộ quy trình từ **comment khách hàng Nhật 
 
 Chạy bằng **Claude Code** + MCP server Backlog + Google Sheets API.
 
+### Dành cho ai?
+
+| Vai trò | Dùng tool này để làm gì |
+|---------|------------------------|
+| **BrSE / PM** | Gõ 1 prompt → tự động tổng hợp toàn bộ comment khách thành checklist, không cần đọc thủ công |
+| **BA** | Lọc comment theo assignee / 親課題 / khoảng ngày, xuất checklist rõ ràng để theo dõi tiến độ sửa |
+| **Designer** | Nhận link Google Sheets → đọc cột "Việc cần sửa" → check ✓ Round 1 / Round 2 / Round 3 sau mỗi lần sửa |
+
+---
+
+## Ví dụ sử dụng (Quick Start)
+
+Mở **Claude Code** trong thư mục này, gõ prompt bằng tiếng Việt tự nhiên:
+
+```
+Tạo checklist cho assignee VTI ゴク — dự án POS_UI,
+lấy tất cả ticket có comment khách hàng (status: 差戻 + 確認待ち),
+sau đó upload lên Google Sheets.
+```
+
+Claude Code sẽ tự động:
+
+1. Kéo toàn bộ ticket + comment từ Backlog
+2. Phân tích và viết checklist theo từng ticket
+3. Xuất file `output/Checklist_DaModoshi_VTI_ゴク_YYYY-MM-DD.md`
+4. Convert → CSV → upload Google Sheets (thêm tab mới vào file đang có)
+5. Trả về link Sheets để gửi cho designer
+
+**Thay đổi tham số tùy nhu cầu:**
+
+| Tham số | Ví dụ |
+|---------|-------|
+| Assignee | `VTI アイン`, `VTI ゴク`, tên thật, hoặc assigneeId số |
+| Status | `差戻` (cần sửa lại), `確認待ち` (chờ confirm), hoặc cả hai |
+| Lọc 親課題 | `chỉ lấy ticket thuộc POS_UI-132` |
+| Khoảng ngày | `chỉ lấy comment từ tháng 5` |
+
+> **Lưu ý:** Phase 2 (upload Sheets) cũng có thể chạy độc lập nếu đã có file `.md`:
+> ```bash
+> .venv/bin/python3 scripts/run_all.py output/Checklist_xxx.md
+> ```
+
 ---
 
 ## Mục đích
@@ -60,7 +102,7 @@ Sau khi dùng tool này:
 │  ┌─────────────────────────────────────────────────────────────┐    │
 │  │  scripts/run_all.py  (1 lệnh duy nhất)                      │    │
 │  │                                                             │    │
-│  │  md_to_csv.py       Markdown → CSV 15 cột                  │    │
+│  │  md_to_csv.py       Markdown → CSV 14 cột                  │    │
 │  │       ↓                                                     │    │
 │  │  upload_to_gdrive.py  upload + format tự động:             │    │
 │  │                       merge cells, checkbox Round 1/2/3,   │    │
@@ -101,7 +143,7 @@ Sau khi dùng tool này:
 
 | Bước | Lệnh / File | Mô tả |
 |------|-------------|-------|
-| **1. Convert** | `md_to_csv.py` | Parse Markdown → CSV 15 cột |
+| **1. Convert** | `md_to_csv.py` | Parse Markdown → CSV 14 cột |
 | **2. Upload** | `upload_to_gdrive.py` | Upload CSV → Google Sheets |
 | **3. Format** | (tự động) | Merge cells, checkbox Round 1/2/3, màu theo category, freeze 3 cột |
 | **4. Pipeline** | `run_all.py` | Gộp 3 bước trên thành 1 lệnh, tự nhớ spreadsheet ID |
@@ -201,7 +243,6 @@ Nếu tab đã tồn tại → tự xóa và tạo lại (refresh data).
 | # | Số thứ tự trong ticket |
 | Nhóm | Category (màu riêng theo loại) |
 | Việc cần sửa | Mô tả việc cần làm — mệnh lệnh rõ ràng |
-| 出典 | Comment ID nguồn để truy vết |
 | Round 1 / 2 / 3 | Checkbox ✓ designer tự điền |
 | M | Mandatory — chỉ đánh khi khách dùng 必須/必ず |
 | Remark | Ghi chú điểm dễ sót |

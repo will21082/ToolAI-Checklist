@@ -94,9 +94,9 @@ def main():
                 continue
             if not header_skipped:
                 continue
-            if len(cells) >= 8:
-                padded = (cells + [''] * 9)[:9]  # #,Nhóm,Việc,出典,R1,R2,R3,M,Remark
-                table_cells = padded[0:3] + padded[4:9]  # drop 出典 (index 3)
+            if len(cells) >= 7:
+                padded = (cells + [''] * 8)[:8]  # #,Nhóm,Việc,R1,R2,R3,M,Remark
+                table_cells = padded[0:8]
                 rows.append([
                     current_parent,
                     current_ticket_key,

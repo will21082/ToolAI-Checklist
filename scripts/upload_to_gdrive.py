@@ -26,13 +26,13 @@ TOKEN_FILE = BASE_DIR / "token.json"
 # ── Column indices ────────────────────────────────────────────────────────────
 C_PARENT, C_TICKET, C_TITLE          = 0, 1, 2
 C_NUM, C_NHOM, C_TASK                = 3, 4, 5
-C_R1, C_R2, C_R3, C_M, C_REMARK     = 6, 7, 8, 9, 10
+C_R1, C_R2, C_R3, C_M, C_REMARK      = 6, 7, 8, 9, 10
 C_ASSIGNEE, C_STATUS, C_DATE         = 11, 12, 13
 
 NCOLS = 14
 
-#                  親課題  Ticket  Tiêu đề  #    Nhóm  Việc   R1   R2   R3    M   Remark  担当  Status  Ngày
-COLUMN_WIDTHS_PX = [180,   90,    210,     38,  205,  370,   72,  72,  72,  46,   240,  110,  155,   195]
+#                  親課題  Ticket  Tiêu đề  #    Nhóm  Việc   R1   R2   R3   M   Remark  担当  Status  Ngày
+COLUMN_WIDTHS_PX = [180,   90,    220,     38,  175,  390,   65,  65,  65,  46,   250,  110,  145,   180]
 
 # ── Colors ───────────────────────────────────────────────────────────────────
 def rgb(r, g, b): return {"red": r/255, "green": g/255, "blue": b/255}
@@ -164,15 +164,15 @@ def format_sheet(sheets_svc, spreadsheet_id, csv_path: Path, sheet_id: int = Non
         "fields": "userEnteredFormat(textFormat,verticalAlignment,borders)"
     }})
 
-    # ── 4. Wrap text — Việc cần sửa + Remark ─────────────────────────────────
-    for col in (C_TASK, C_REMARK):
+    # ── 4. Wrap text — Nhóm, Việc cần sửa, Remark ───────────────────────────
+    for col in (C_NHOM, C_TASK, C_REMARK):
         requests.append({"repeatCell": {
             "range": cell_range(2, total_rows, col, col+1),
             "cell": {"userEnteredFormat": {"wrapStrategy": "WRAP"}},
             "fields": "userEnteredFormat.wrapStrategy"
         }})
 
-    # ── 5. Center align — #, Round 1/2/3, M ──────────────────────────────────
+    # ── 5. Center align — #, Round 1/2/3, M ─────────────────────────────────
     requests.append({"repeatCell": {
         "range": cell_range(2, total_rows, C_NUM, C_NUM+1),
         "cell": {"userEnteredFormat": {"horizontalAlignment": "CENTER"}},
@@ -229,7 +229,7 @@ def format_sheet(sheets_svc, spreadsheet_id, csv_path: Path, sheet_id: int = Non
                 "fields": "userEnteredFormat.backgroundColor"
             }})
 
-    # ── 11. Conditional formatting — M column (red bg) ───────────────────────
+    # ── 11. Conditional formatting — M column (red bg when not blank) ────────
     requests.append({"addConditionalFormatRule": {
         "rule": {
             "ranges": [cell_range(2, total_rows, C_M, C_M+1)],
