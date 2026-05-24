@@ -32,7 +32,7 @@ C_ASSIGNEE, C_STATUS, C_DATE         = 11, 12, 13
 NCOLS = 14
 
 #                  親課題  Ticket  Tiêu đề  #    Nhóm  Việc   R1   R2   R3   M   Remark  担当  Status  Ngày
-COLUMN_WIDTHS_PX = [180,   90,    220,     38,  175,  390,   65,  65,  65,  46,   250,  110,  145,   180]
+COLUMN_WIDTHS_PX = [180,   90,    220,     38,  260,  370,   65,  65,  65,  46,   240,  110,  145,   180]
 
 # ── Colors ───────────────────────────────────────────────────────────────────
 def rgb(r, g, b): return {"red": r/255, "green": g/255, "blue": b/255}
@@ -43,15 +43,12 @@ TICKET_A     = rgb(255, 255, 255) # white
 TICKET_B     = rgb(241, 245, 253) # very light blue
 
 NHOM_COLORS = {
-    "Header & Navigation":                      rgb(207, 226, 255),
-    "UI Components & Controls":                 rgb(198, 239, 206),
-    "Hiển thị & Đồng bộ Thông tin":             rgb(255, 249, 196),
-    "Cấu trúc Layout & Vị trí Thông tin":       rgb(255, 235, 205),
-    "Screen Flow & Luồng Xử lý":                rgb(234, 209, 252),
-    "Input Fields & Form Design":               rgb(252, 213, 226),
-    "Tab & Thông tin Chi tiết / Consistency":   rgb(200, 245, 250),
-    "Visual Style":                             rgb(252, 210, 210),
-    "Data Format":                              rgb(230, 230, 230),
+    "Header":             rgb(207, 226, 255),  # xanh dương nhạt
+    "Footer":             rgb(198, 239, 206),  # xanh lá nhạt
+    "Visual Style":       rgb(252, 210, 210),  # đỏ nhạt
+    "Component Behavior": rgb(255, 249, 196),  # vàng nhạt
+    "Data Format":        rgb(230, 230, 230),  # xám nhạt
+    "Layout & Size":      rgb(255, 235, 205),  # cam nhạt
 }
 
 
@@ -221,7 +218,8 @@ def format_sheet(sheets_svc, spreadsheet_id, csv_path: Path, sheet_id: int = Non
 
     # ── 10. Nhóm column — color by category ──────────────────────────────────
     for row_idx, nhom in nhom_cells:
-        color = NHOM_COLORS.get(nhom)
+        prefix = nhom.split(" — ")[0].strip() if " — " in nhom else nhom
+        color = NHOM_COLORS.get(prefix)
         if color:
             requests.append({"repeatCell": {
                 "range": cell_range(row_idx, row_idx, C_NHOM, C_NHOM+1),

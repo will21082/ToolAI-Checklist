@@ -117,8 +117,8 @@ Sau khi dùng tool này:
 │                                 │                                    │
 │                                 ▼                                    │
 │  📊 Google Sheets (1 file, nhiều tab theo ngày)                     │
+│     Tab: Checklist_DaModoshi_VTI_ゴク_2026-05-24                    │
 │     Tab: Checklist_DaModoshi_VTI_アイン_2026-05-24                  │
-│     Tab: Checklist_KakuninMachi_VTI_アイン_2026-05-24               │
 │                                 │                                    │
 │                                 ▼                                    │
 │              👤 Designer check ✓ Round 1 / Round 2 / Round 3        │
@@ -241,7 +241,7 @@ Nếu tab đã tồn tại → tự xóa và tạo lại (refresh data).
 | Ticket | Issue key (merge theo ticket) |
 | Tiêu đề màn hình | Tên màn hình (merge theo ticket) |
 | # | Số thứ tự trong ticket |
-| Nhóm | Category (màu riêng theo loại) |
+| Nhóm | Phân loại theo guideline khách — format `Phân loại — Item` (xem bảng bên dưới) |
 | Việc cần sửa | Mô tả việc cần làm — mệnh lệnh rõ ràng |
 | Round 1 / 2 / 3 | Checkbox ✓ designer tự điền |
 | M | Mandatory — chỉ đánh khi khách dùng 必須/必ず |
@@ -249,6 +249,23 @@ Nếu tab đã tồn tại → tự xóa và tạo lại (refresh data).
 | Người phụ trách | Assignee (merge theo ticket) |
 | Status | Trạng thái ticket (merge theo ticket) |
 | Ngày comment | Ngày khách comment (merge theo ticket) |
+
+### Bảng phân loại Nhóm (12 cặp chuẩn)
+
+| # | Phân loại | Item | Rule |
+|---|-----------|------|------|
+| 1 | Header | Tên màn hình | Hiển thị tên menu tương ứng |
+| 2 | Header | Màu header | Màn thông thường: 00838C (xanh) / Màn hủy: D43E3E (đỏ) |
+| 3 | Header | Thông tin nhân viên, hội viên | Màu 00838C, dạng textlink có gạch chân |
+| 4 | Footer | Stepbar | Nút back bên trái, button chức năng từ phải qua trái, tối đa 5 step |
+| 5 | Visual Style | Tab | Tab kiểu Windows, bo tròn |
+| 6 | Component Behavior | List data | Hiển thị số lượng kết quả ở phía trên list |
+| 7 | Component Behavior | Table | Có ký hiệu sort ở các cột (trừ cột No) |
+| 8 | Component Behavior | Popup | Button đóng là「閉じる」, góc trái phía dưới, không dùng X |
+| 9 | Data Format | Số tiền | Số tiền âm: ¥-XXX |
+| 10 | Data Format | Text Alignment | Code căn giữa, character căn trái, tiền tệ căn phải |
+| 11 | Layout & Size | Field | Field số tiền size to, textbox không quá dài |
+| 12 | Layout & Size | Popup | Popup size to, không thừa khoảng trống |
 
 ---
 
@@ -267,6 +284,7 @@ Nếu tab đã tồn tại → tự xóa và tạo lại (refresh data).
 |---|---|
 | Project | POS_UI (`id: 745282`) |
 | VTI アイン `assigneeId` | `2045991` |
+| VTI ゴク `assigneeId` | `2220256` |
 | Status 差戻／修正依頼 | `id: 379481` |
 | Status 確認待ち | `id: 379472` |
 | Google Sheets chính | `.state/spreadsheet.json` (tự tạo sau lần chạy đầu) |
