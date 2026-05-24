@@ -22,61 +22,65 @@ Sau khi dùng tool này:
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                         PHASE 1 — Tạo Checklist                     │
-│                                                                     │
-│   👤 BrSE/PO                                                        │
-│       │  yêu cầu tạo checklist                                     │
-│       ▼                                                             │
-│  ┌──────────────────────────────┐                                   │
-│  │     Claude Code (IDE)        │                                   │
-│  │  Skill: backlog-to-checklist │◄── Checklist_Screen_Design_VN.md │
-│  │  (phân tích + viết checklist)│    (bộ category chuẩn)           │
-│  └──────────────┬───────────────┘                                   │
-│                 │ MCP tools                                         │
-│                 ▼                                                   │
-│  ┌──────────────────────────────┐                                   │
-│  │   MCP Server: backlog        │                                   │
-│  │  get_issues (assigneeId,     │◄──► Backlog Cloud API             │
-│  │  statusId, count=100)        │     /api/v2/issues                │
-│  │  get_issue_comments          │     /api/v2/issues/:key/comments  │
-│  │  get_issue (resolve parent)  │                                   │
-│  └──────────────┬───────────────┘                                   │
-│                 │                                                   │
-│                 ▼                                                   │
-│         output/Checklist_*.md                                       │
-└─────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│  PHASE 1 — Tạo Checklist                                             │
+│                                                                      │
+│   👤 BrSE/PO                                                         │
+│       │  yêu cầu tạo checklist (assignee, status, 親課題)            │
+│       ▼                                                              │
+│  ┌─────────────────────────────────────────────────────────────┐    │
+│  │  Claude Code (IDE)                                          │    │
+│  │                                                             │    │
+│  │  Skill: backlog-to-checklist  ◄── Checklist_Screen_        │    │
+│  │  - phân tích comment               Design_VN.md            │    │
+│  │  - gom nhóm theo ticket            (bộ category chuẩn)     │    │
+│  │  - viết "việc cần sửa"                                      │    │
+│  │                                                             │    │
+│  │  Gọi MCP tools:                                             │    │
+│  │  ┌─────────────────────────────────────────────────────┐   │    │
+│  │  │  MCP Server: backlog                                │   │    │
+│  │  │  (cài sẵn, kết nối Backlog Cloud bên trong)         │   │    │
+│  │  │                                                     │   │    │
+│  │  │  get_issues        → lấy danh sách ticket           │   │    │
+│  │  │  get_issue_comments → lấy comment từng ticket       │   │    │
+│  │  │  get_issue          → resolve parentIssueId         │   │    │
+│  │  └─────────────────────────────────────────────────────┘   │    │
+│  └──────────────────────────────┬──────────────────────────────┘    │
+│                                 │                                    │
+│                                 ▼                                    │
+│                    output/Checklist_*.md                             │
+└──────────────────────────────────────────────────────────────────────┘
 
-┌─────────────────────────────────────────────────────────────────────┐
-│                     PHASE 2 — Upload Google Sheets                  │
-│                                                                     │
-│         output/Checklist_*.md                                       │
-│                 │                                                   │
-│                 ▼                                                   │
-│  ┌──────────────────────────────┐                                   │
-│  │   scripts/run_all.py         │  (1 lệnh chạy cả pipeline)       │
-│  │         │                    │                                   │
-│  │         ▼                    │                                   │
-│  │   md_to_csv.py               │  Markdown → CSV (15 cột)         │
-│  │         │                    │                                   │
-│  │         ▼                    │                                   │
-│  │   upload_to_gdrive.py        │  CSV → Google Sheets              │
-│  └──────────────┬───────────────┘  + format: merge cells,          │
-│                 │                    checkbox, màu category,        │
-│                 │ OAuth2             freeze panes                   │
-│                 ▼                                                   │
-│  ┌──────────────────────────────┐                                   │
-│  │  Google Drive API v3         │  tạo file hoặc thêm tab mới      │
-│  │  Google Sheets API v4        │  vào file đã có                  │
-│  └──────────────┬───────────────┘                                   │
-│                 ▼                                                   │
-│  📊 Google Sheets (1 file, nhiều tab theo ngày)                    │
-│     Tab: Checklist_DaModoshi_VTI_アイン_2026-05-24                 │
-│     Tab: Checklist_KakuninMachi_VTI_アイン_2026-05-24              │
-│                 │                                                   │
-│                 ▼                                                   │
-│      👤 Designer check ✓ Round 1 / Round 2 / Round 3               │
-└─────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│  PHASE 2 — Upload Google Sheets                                      │
+│                                                                      │
+│                    output/Checklist_*.md                             │
+│                                 │                                    │
+│                                 ▼                                    │
+│  ┌─────────────────────────────────────────────────────────────┐    │
+│  │  scripts/run_all.py  (1 lệnh duy nhất)                      │    │
+│  │                                                             │    │
+│  │  md_to_csv.py       Markdown → CSV 15 cột                  │    │
+│  │       ↓                                                     │    │
+│  │  upload_to_gdrive.py  upload + format tự động:             │    │
+│  │                       merge cells, checkbox Round 1/2/3,   │    │
+│  │                       màu theo category, freeze 3 cột      │    │
+│  │                                                             │    │
+│  │  Gọi Google APIs (qua OAuth2 Desktop):                      │    │
+│  │  ┌─────────────────────────────────────────────────────┐   │    │
+│  │  │  Google Drive API v3  → tạo file hoặc thêm tab mới  │   │    │
+│  │  │  Google Sheets API v4 → format, merge, checkbox      │   │    │
+│  │  └─────────────────────────────────────────────────────┘   │    │
+│  └──────────────────────────────┬──────────────────────────────┘    │
+│                                 │                                    │
+│                                 ▼                                    │
+│  📊 Google Sheets (1 file, nhiều tab theo ngày)                     │
+│     Tab: Checklist_DaModoshi_VTI_アイン_2026-05-24                  │
+│     Tab: Checklist_KakuninMachi_VTI_アイン_2026-05-24               │
+│                                 │                                    │
+│                                 ▼                                    │
+│              👤 Designer check ✓ Round 1 / Round 2 / Round 3        │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
