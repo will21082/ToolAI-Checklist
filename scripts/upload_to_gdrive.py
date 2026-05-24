@@ -24,13 +24,15 @@ CREDENTIALS_FILE = BASE_DIR / "credentials.json"
 TOKEN_FILE = BASE_DIR / "token.json"
 
 # ── Column indices ────────────────────────────────────────────────────────────
-C_PARENT, C_TICKET, C_TITLE              = 0, 1, 2
-C_NUM, C_NHOM, C_TASK, C_SOURCE         = 3, 4, 5, 6
-C_R1, C_R2, C_R3, C_M, C_REMARK        = 7, 8, 9, 10, 11
-C_ASSIGNEE, C_STATUS, C_DATE            = 12, 13, 14
+C_PARENT, C_TICKET, C_TITLE          = 0, 1, 2
+C_NUM, C_NHOM, C_TASK                = 3, 4, 5
+C_R1, C_R2, C_R3, C_M, C_REMARK     = 6, 7, 8, 9, 10
+C_ASSIGNEE, C_STATUS, C_DATE         = 11, 12, 13
 
-#                  親課題  Ticket  Tiêu đề  #    Nhóm  Việc   出典   R1   R2   R3    M   Remark  担当  Status  Ngày
-COLUMN_WIDTHS_PX = [180,   90,    210,     38,  205,  370,   95,  72,  72,  72,  46,   240,   110,  155,   195]
+NCOLS = 14
+
+#                  親課題  Ticket  Tiêu đề  #    Nhóm  Việc   R1   R2   R3    M   Remark  担当  Status  Ngày
+COLUMN_WIDTHS_PX = [180,   90,    210,     38,  205,  370,   72,  72,  72,  46,   240,  110,  155,   195]
 
 # ── Colors ───────────────────────────────────────────────────────────────────
 def rgb(r, g, b): return {"red": r/255, "green": g/255, "blue": b/255}
@@ -134,7 +136,7 @@ def format_sheet(sheets_svc, spreadsheet_id, csv_path: Path, sheet_id: int = Non
 
     # ── 2. Header row — bold, dark blue bg, white text, center ───────────────
     requests.append({"repeatCell": {
-        "range": cell_range(1, 1, 0, 15),
+        "range": cell_range(1, 1, 0, NCOLS),
         "cell": {"userEnteredFormat": {
             "backgroundColor": HEADER_BG,
             "textFormat": {"bold": True, "fontSize": 10,
@@ -148,7 +150,7 @@ def format_sheet(sheets_svc, spreadsheet_id, csv_path: Path, sheet_id: int = Non
 
     # ── 3. All data cells — base style ───────────────────────────────────────
     requests.append({"repeatCell": {
-        "range": cell_range(2, total_rows, 0, 15),
+        "range": cell_range(2, total_rows, 0, NCOLS),
         "cell": {"userEnteredFormat": {
             "textFormat": {"fontSize": 10},
             "verticalAlignment": "TOP",
@@ -212,7 +214,7 @@ def format_sheet(sheets_svc, spreadsheet_id, csv_path: Path, sheet_id: int = Non
     for idx, (start, end, _) in enumerate(ticket_groups):
         bg = TICKET_B if idx % 2 == 0 else TICKET_A
         requests.append({"repeatCell": {
-            "range": cell_range(start, end, 0, 15),
+            "range": cell_range(start, end, 0, NCOLS),
             "cell": {"userEnteredFormat": {"backgroundColor": bg}},
             "fields": "userEnteredFormat.backgroundColor"
         }})
@@ -253,7 +255,7 @@ def format_sheet(sheets_svc, spreadsheet_id, csv_path: Path, sheet_id: int = Non
 
     # ── 13. Outer border for entire table ─────────────────────────────────────
     requests.append({"updateBorders": {
-        "range": cell_range(1, total_rows, 0, 15),
+        "range": cell_range(1, total_rows, 0, NCOLS),
         "top":    {"style": "SOLID_MEDIUM", "color": rgb(26, 69, 137)},
         "bottom": {"style": "SOLID_MEDIUM", "color": rgb(26, 69, 137)},
         "left":   {"style": "SOLID_MEDIUM", "color": rgb(26, 69, 137)},

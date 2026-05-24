@@ -95,7 +95,8 @@ def main():
             if not header_skipped:
                 continue
             if len(cells) >= 8:
-                table_cells = (cells + [''] * 9)[:9]  # pad to 9: #,Nhóm,Việc,出典,R1,R2,R3,M,Remark
+                padded = (cells + [''] * 9)[:9]  # #,Nhóm,Việc,出典,R1,R2,R3,M,Remark
+                table_cells = padded[0:3] + padded[4:9]  # drop 出典 (index 3)
                 rows.append([
                     current_parent,
                     current_ticket_key,
@@ -112,7 +113,7 @@ def main():
                     header_skipped = False
 
     headers = ['親課題', 'Ticket', 'Tiêu đề màn hình',
-               '#', 'Nhóm', 'Việc cần sửa', '出典', 'Round 1', 'Round 2', 'Round 3', 'M', 'Remark',
+               '#', 'Nhóm', 'Việc cần sửa', 'Round 1', 'Round 2', 'Round 3', 'M', 'Remark',
                'Người phụ trách', 'Status', 'Ngày comment']
 
     # Pad rows to match headers
